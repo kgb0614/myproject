@@ -1,0 +1,135 @@
+select figure at -13 303 8 -branches -sn=1
+select figure at 151 579 8 -branches -sn=1
+select figure at 37 584 8 -branches -sn=1
+add instance Fadder 112 448 R0 -sn=1
+select figure at 328 991 8 -branches -sn=1
+select figure at 266 513 8 -branches -sn=1
+delete selection -sn=1
+select figure at 237 592 8 -branches -sn=1
+select figure at 76 495 8 -branches -sn=1
+add instance Fadder 208 528 R0 -sn=1
+select figure at 318 114 8 -branches -sn=1
+select figure at 297 73 8 -branches -sn=1
+select figure at 712 581 8 -branches -sn=1
+select figure at 448 224 8 -branches -sn=1
+move instance at 208 528 to 192 512 R0 -keepConn -sn=1
+add instance Fadder 192 1248 R0 -sn=1
+add instance Fadder 192 1968 R0 -sn=1
+select figure at 764 487 8 -branches -sn=1
+select figure at 36 235 8 -branches -sn=1
+add instance fnd0 848 832 R0 -sn=1
+select figure at 646 675 8 -branches -sn=1
+add autowire 576 544 640 544 8 -sn=1
+add autowire 640 544 640 752 8 -sn=1
+add autowire 640 752 208 752 8 -sn=1
+add autowire 208 752 112 752 8 -sn=1
+add autowire 112 752 112 1408 8 -sn=1
+add autowire 112 1408 192 1408 8 -sn=1
+add autowire 576 1344 624 1344 8 -sn=1
+add autowire 576 1280 688 1280 8 -sn=1
+add autowire 688 1280 688 1488 8 -sn=1
+add autowire 688 1488 112 1488 8 -sn=1
+add autowire 112 1488 112 2128 8 -sn=1
+add autowire 112 2128 192 2128 8 -sn=1
+select figure at 834 1173 8 -branches -sn=1
+select figure at 944 774 8 -branches -sn=1
+move instance at 848 832 to 848 1344 R0 -keepConn -sn=1
+add autowire 192 544 64 544 8 -sn=1
+add autowire 592 608 576 592 8 -sn=1
+select figure at 584 602 8 -branches -sn=1
+select figure at 573 574 8 -branches -sn=1
+select figure at 595 603 8 -branches -sn=1
+select figure at 595 603 8 -branches -all -sn=1
+delete selection -sn=1
+add autowire 576 608 848 928 8 -sn=1
+add autowire 624 1344 848 992 8 -sn=1
+add autowire 576 2064 848 1056 8 -sn=1
+add autowire 576 2000 848 1120 8 -sn=1
+add autowire 192 2000 96 2000 8 -sn=1
+add autowire 192 2064 96 2064 8 -sn=1
+add autowire 192 1344 96 1344 8 -sn=1
+add autowire 192 1280 96 1280 8 -sn=1
+add autowire 192 672 80 672 8 -sn=1
+add autowire 192 608 176 608 8 -sn=1
+add autowire 80 608 176 608 8 -sn=1
+select figure at 287 334 8 -branches -sn=1
+select figure at 161 255 8 -branches -sn=1
+add iomarker 64 544 0 Unknown Unknown -sn=1
+add iomarker 80 608 0 Unknown Unknown -sn=1
+add iomarker 80 672 0 Unknown Unknown -sn=1
+add iomarker 96 1280 0 Unknown Unknown -sn=1
+select figure at 32 689 8 -branches -sn=1
+select figure at 42 667 8 -branches -sn=1
+delete selection -sn=1
+select figure at 71 671 8 -branches -sn=1
+delete selection -sn=1
+select figure at 73 1278 8 -branches -sn=1
+delete selection -sn=1
+select figure at 16 1315 8 -branches -sn=1
+select figure at 50 1289 8 -branches -sn=1
+delete selection -sn=1
+add iomarker 96 1280 0 Unknown Unknown -sn=1
+add iomarker 96 1344 0 Unknown Unknown -sn=1
+add iomarker 96 2000 0 Unknown Unknown -sn=1
+add iomarker 96 2064 0 Unknown Unknown -sn=1
+BeginGroup
+add wire 1232 928 1264 928 -sn=1
+add iomarker 1264 928 0 Output Unknown -sn=1
+EndGroup
+BeginGroup
+add wire 1232 992 1264 992 -sn=1
+add iomarker 1264 992 0 Output Unknown -sn=1
+EndGroup
+BeginGroup
+add wire 1232 1056 1264 1056 -sn=1
+add iomarker 1264 1056 0 Output Unknown -sn=1
+EndGroup
+BeginGroup
+add wire 1232 1120 1264 1120 -sn=1
+add iomarker 1264 1120 0 Output Unknown -sn=1
+EndGroup
+BeginGroup
+add wire 1232 1184 1264 1184 -sn=1
+add iomarker 1264 1184 0 Output Unknown -sn=1
+EndGroup
+BeginGroup
+add wire 1232 1248 1264 1248 -sn=1
+add iomarker 1264 1248 0 Output Unknown -sn=1
+EndGroup
+BeginGroup
+add wire 1232 1312 1264 1312 -sn=1
+add iomarker 1264 1312 0 Output Unknown -sn=1
+EndGroup
+select figure at 272 412 8 -branches -sn=1
+select figure at 31 534 8 -branches -sn=1
+name net at 64 544 8 A0 -sn=1
+select figure at 45 611 8 -branches -sn=1
+name net at 80 608 8 B0 -sn=1
+select figure at 32 1278 8 -branches -sn=1
+name net at 96 1280 8 A1 -sn=1
+select figure at 54 1353 8 -branches -sn=1
+name net at 96 1344 8 B1 -sn=1
+select figure at 54 1982 8 -branches -extend -sn=1
+select figure at 16 1980 8 -branches -sn=1
+name net at 96 2000 8 A2 -sn=1
+select figure at 75 2070 8 -branches -sn=1
+name net at 96 2064 8 B2 -sn=1
+select figure at 1395 902 8 -branches -sn=1
+name net at 1232 928 8 ba -sn=1
+select figure at 1312 1002 8 -branches -sn=1
+name net at 1232 992 8 bb -sn=1
+select figure at 1298 1061 8 -branches -sn=1
+name net at 1232 1056 8 bc -sn=1
+select figure at 1332 1119 8 -branches -sn=1
+name net at 1232 1120 8 bd -sn=1
+select figure at 1411 1178 8 -branches -extend -sn=1
+select figure at 1372 1192 8 -branches -sn=1
+name net at 1232 1184 8 be -sn=1
+select figure at 1312 1252 8 -branches -sn=1
+name net at 1232 1248 8 bf -sn=1
+select figure at 1388 1323 8 -branches -extend -sn=1
+select figure at 1310 1328 8 -branches -sn=1
+name net at 1232 1312 8 bg -sn=1
+add instance gnd 16 800 R0 -sn=1
+select figure at 161 835 8 -branches -sn=1
+select figure at 164 709 8 -branches -sn=1

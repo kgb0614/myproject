@@ -1,0 +1,14 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "A0" LOC = P40;
+NET "A1" LOC = P41;
+NET "A2" LOC = P43;
+NET "A3" LOC = P44;
+NET "barA" LOC = P102;
+NET "barB" LOC = P101;
+NET "barC" LOC = P100;
+NET "barD" LOC = P99;
+NET "barE" LOC = P98;
+NET "barF" LOC = P97;
+NET "barG" LOC = P95;

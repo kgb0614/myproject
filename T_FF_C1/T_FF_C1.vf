@@ -1,0 +1,75 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : T_FF_C1.vf
+// /___/   /\     Timestamp : 11/10/2021 11:09:45
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/usr/FPGA3/T_FF_C1/T_FF_C1.vf -w C:/usr/FPGA3/T_FF_C1/T_FF_C1.sch
+//Design Name: T_FF_C1
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module JK_FF_C_MUSER_T_FF_C1(CK, 
+                             J, 
+                             K, 
+                             bQ, 
+                             Q);
+
+    input CK;
+    input J;
+    input K;
+   output bQ;
+   output Q;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire bQ_DUMMY;
+   wire Q_DUMMY;
+   
+   assign bQ = bQ_DUMMY;
+   assign Q = Q_DUMMY;
+   NAND2  XLXI_1 (.I0(bQ_DUMMY), 
+                 .I1(XLXN_1), 
+                 .O(Q_DUMMY));
+   NAND2  XLXI_2 (.I0(XLXN_2), 
+                 .I1(Q_DUMMY), 
+                 .O(bQ_DUMMY));
+   NAND3  XLXI_3 (.I0(CK), 
+                 .I1(J), 
+                 .I2(bQ_DUMMY), 
+                 .O(XLXN_1));
+   NAND3  XLXI_4 (.I0(Q_DUMMY), 
+                 .I1(K), 
+                 .I2(CK), 
+                 .O(XLXN_2));
+endmodule
+`timescale 1ns / 1ps
+
+module T_FF_C1(CK, 
+               T, 
+               bQ, 
+               Q);
+
+    input CK;
+    input T;
+   output bQ;
+   output Q;
+   
+   
+   JK_FF_C_MUSER_T_FF_C1  XLXI_1 (.CK(CK), 
+                                 .J(T), 
+                                 .K(T), 
+                                 .bQ(bQ), 
+                                 .Q(Q));
+endmodule

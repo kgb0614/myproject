@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/usr/Xwork/fnd1/fnd0.xst" -ofn "C:/usr/Xwork/fnd1/fnd0.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fnd0.ucf -p xc6slx9-tqg144-3 fnd0.ngc fnd0.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fnd0_map.ncd fnd0.ngd fnd0.pcf 
+par -w -intstyle ise -ol high -mt off fnd0_map.ncd fnd0.ncd fnd0.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fnd0.twx fnd0.ncd -o fnd0.twr fnd0.pcf -ucf fnd0.ucf 
+bitgen -intstyle ise -f fnd0.ut fnd0.ncd 

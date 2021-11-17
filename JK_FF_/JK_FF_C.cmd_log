@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/usr/FPGA3/JK_FF_/JK_FF_C.xst" -ofn "C:/usr/FPGA3/JK_FF_/JK_FF_C.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc JK_FF_C.ucf -p xc6slx9-tqg144-3 JK_FF_C.ngc JK_FF_C.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o JK_FF_C_map.ncd JK_FF_C.ngd JK_FF_C.pcf 
+par -w -intstyle ise -ol high -mt off JK_FF_C_map.ncd JK_FF_C.ncd JK_FF_C.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml JK_FF_C.twx JK_FF_C.ncd -o JK_FF_C.twr JK_FF_C.pcf -ucf JK_FF_C.ucf 
+bitgen -intstyle ise -f JK_FF_C.ut JK_FF_C.ncd 

@@ -1,0 +1,79 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml fnd0.twx fnd0.ncd -o fnd0.twr fnd0.pcf -ucf fnd0.ucf
+
+Design file:              fnd0.ncd
+Physical constraint file: fnd0.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A0             |barA           |   10.796|
+A0             |barB           |   10.735|
+A0             |barC           |   10.908|
+A0             |barD           |   10.859|
+A0             |barE           |   10.857|
+A0             |barF           |   10.534|
+A0             |barG           |    9.228|
+A1             |barA           |   10.883|
+A1             |barB           |   10.800|
+A1             |barC           |   10.919|
+A1             |barD           |   11.112|
+A1             |barE           |   11.050|
+A1             |barF           |   10.474|
+A1             |barG           |    9.368|
+A2             |barA           |   10.788|
+A2             |barB           |   10.533|
+A2             |barC           |   10.447|
+A2             |barD           |   11.004|
+A2             |barE           |   10.562|
+A2             |barF           |   10.632|
+A2             |barG           |    8.888|
+A3             |barA           |   10.748|
+A3             |barB           |   10.947|
+A3             |barC           |   10.793|
+A3             |barD           |   10.780|
+A3             |barE           |   11.150|
+A3             |barF           |   10.631|
+A3             |barG           |    9.516|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Nov 26 21:51:19 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

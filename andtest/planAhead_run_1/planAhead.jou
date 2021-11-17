@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Sep 15 14:59:05 2021
+# Process ID: 840
+# Log file: C:/usr/fpga4/andtest/planAhead_run_1/planAhead.log
+# Journal file: C:/usr/fpga4/andtest/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/usr/fpga4/andtest/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  A]]
+set_property package_pin "" [get_ports [list  B]]
+startgroup
+set_property package_pin P74 [get_ports A]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports B]
+endgroup
+startgroup
+set_property package_pin P24 [get_ports O]
+endgroup
+save_constraints

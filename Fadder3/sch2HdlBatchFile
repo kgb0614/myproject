@@ -1,0 +1,10 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/fpga4/Fadder3/fnd0.vf,-w,C:/usr/fpga4/Fadder3/fnd0.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/fpga4/Fadder3/fnd1.vf,-w,C:/usr/fpga4/Fadder3/fnd1.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/fpga4/Fadder3/fnd2.vf,-w,C:/usr/fpga4/Fadder3/fnd2.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/fpga4/Fadder3/fnd3.vf,-w,C:/usr/fpga4/Fadder3/fnd3.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/fpga4/Fadder3/fnd4.vf,-w,C:/usr/fpga4/Fadder3/fnd4.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/fpga4/Fadder3/fnd5.vf,-w,C:/usr/fpga4/Fadder3/fnd5.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/fpga4/Fadder3/fnd6.vf,-w,C:/usr/fpga4/Fadder3/fnd6.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/fpga4/Fadder3/fnd7.vf,-w,C:/usr/fpga4/Fadder3/fnd7.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/fpga4/Fadder3/Fadder.vf,-w,C:/usr/fpga4/Fadder3/Fadder.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/fpga4/Fadder3/fadder3_1.vf,-w,C:/usr/fpga4/Fadder3/fadder3_1.sch

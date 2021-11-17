@@ -1,0 +1,3 @@
+NET "A" LOC = P74;
+NET "B" LOC = P80;
+NET "C" LOC = P24;

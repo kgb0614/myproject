@@ -1,0 +1,7 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Fadder C:/usr/fpga4/Fadder3/Fadder.sch C:/usr/fpga4/Fadder3/Fadder.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Fadder C:/usr/fpga4/Fadder3/Fadder.sch C:/usr/fpga4/Fadder3/Fadder.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Fadder C:/usr/fpga4/Fadder3/Fadder.sch C:/usr/fpga4/Fadder3/Fadder.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Fadder C:/usr/fpga4/Fadder3/Fadder.sch C:/usr/fpga4/Fadder3/Fadder.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Fadder C:/usr/fpga4/Fadder3/Fadder.sch C:/usr/fpga4/Fadder3/Fadder.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Fadder C:/usr/fpga4/Fadder3/Fadder.sch C:/usr/fpga4/Fadder3/Fadder.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Fadder C:/usr/fpga4/Fadder3/Fadder.sch C:/usr/fpga4/Fadder3/Fadder.sym 

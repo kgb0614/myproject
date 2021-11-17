@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/usr/fpga4/and2/and2.xst" -ofn "C:/usr/fpga4/and2/and2.syr" 
+xst -intstyle ise -ifn "C:/usr/fpga4/and2/and2.xst" -ofn "C:/usr/fpga4/and2/and2.syr" 
+xst -intstyle ise -ifn "C:/usr/fpga4/and2/and2.xst" -ofn "C:/usr/fpga4/and2/and2.syr" 
+xst -intstyle ise -ifn "C:/usr/fpga4/and2/and2.xst" -ofn "C:/usr/fpga4/and2/and2.syr" 

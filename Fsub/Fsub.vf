@@ -1,0 +1,62 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Fsub.vf
+// /___/   /\     Timestamp : 10/27/2021 11:55:42
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/usr/FPGA3/Fsub/Fsub.vf -w C:/usr/FPGA3/Fsub/Fsub.sch
+//Design Name: Fsub
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Fsub(A, 
+            B, 
+            K0, 
+            D, 
+            K);
+
+    input A;
+    input B;
+    input K0;
+   output D;
+   output K;
+   
+   wire XLXN_3;
+   wire XLXN_11;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire XLXN_17;
+   
+   XOR2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(XLXN_3));
+   XOR2  XLXI_2 (.I0(K0), 
+                .I1(XLXN_3), 
+                .O(D));
+   AND2  XLXI_3 (.I0(K0), 
+                .I1(XLXN_11), 
+                .O(XLXN_17));
+   AND2  XLXI_4 (.I0(B), 
+                .I1(XLXN_11), 
+                .O(XLXN_15));
+   AND2  XLXI_5 (.I0(K0), 
+                .I1(B), 
+                .O(XLXN_16));
+   INV  XLXI_6 (.I(A), 
+               .O(XLXN_11));
+   OR3  XLXI_7 (.I0(XLXN_16), 
+               .I1(XLXN_15), 
+               .I2(XLXN_17), 
+               .O(K));
+endmodule

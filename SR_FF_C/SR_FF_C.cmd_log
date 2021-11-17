@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/usr/FPGA3/SR_FF_C/SR_FF_C.xst" -ofn "C:/usr/FPGA3/SR_FF_C/SR_FF_C.syr" 
+xst -intstyle ise -ifn "C:/usr/FPGA3/SR_FF_C/SR_FF_C.xst" -ofn "C:/usr/FPGA3/SR_FF_C/SR_FF_C.syr" 
+xst -intstyle ise -ifn "C:/usr/FPGA3/SR_FF_C/SR_FF_C.xst" -ofn "C:/usr/FPGA3/SR_FF_C/SR_FF_C.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SR_FF_C.ucf -p xc6slx9-tqg144-3 SR_FF_C.ngc SR_FF_C.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SR_FF_C_map.ncd SR_FF_C.ngd SR_FF_C.pcf 
+par -w -intstyle ise -ol high -mt off SR_FF_C_map.ncd SR_FF_C.ncd SR_FF_C.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml SR_FF_C.twx SR_FF_C.ncd -o SR_FF_C.twr SR_FF_C.pcf -ucf SR_FF_C.ucf 
+bitgen -intstyle ise -f SR_FF_C.ut SR_FF_C.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SR_FF_C.ucf -p xc6slx9-tqg144-3 SR_FF_C.ngc SR_FF_C.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SR_FF_C_map.ncd SR_FF_C.ngd SR_FF_C.pcf 
+par -w -intstyle ise -ol high -mt off SR_FF_C_map.ncd SR_FF_C.ncd SR_FF_C.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml SR_FF_C.twx SR_FF_C.ncd -o SR_FF_C.twr SR_FF_C.pcf -ucf SR_FF_C.ucf 
+bitgen -intstyle ise -f SR_FF_C.ut SR_FF_C.ncd 

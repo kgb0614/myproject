@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\usr\Xwork\fnd1\fnd0.ncd
+OUTFILE=C:\usr\Xwork\fnd1\fnd0.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\usr\Xwork\fnd1
+LICENSE=WebPack
+USER_INFO=__0_0_0

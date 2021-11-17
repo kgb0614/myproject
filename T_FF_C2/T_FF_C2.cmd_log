@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/usr/FPGA3/T_FF_C2/T_FF_C2.xst" -ofn "C:/usr/FPGA3/T_FF_C2/T_FF_C2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc T_FF_C2.ucf -p xc6slx9-tqg144-3 T_FF_C2.ngc T_FF_C2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o T_FF_C2_map.ncd T_FF_C2.ngd T_FF_C2.pcf 
+par -w -intstyle ise -ol high -mt off T_FF_C2_map.ncd T_FF_C2.ncd T_FF_C2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml T_FF_C2.twx T_FF_C2.ncd -o T_FF_C2.twr T_FF_C2.pcf -ucf T_FF_C2.ucf 
+bitgen -intstyle ise -f T_FF_C2.ut T_FF_C2.ncd 

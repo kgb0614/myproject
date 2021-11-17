@@ -1,0 +1,2 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/T_FF_C2/T_FF_C2.vf,-w,C:/usr/FPGA3/T_FF_C2/T_FF_C2.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/T_FF_C2/D_FF_C.vf,-w,C:/usr/FPGA3/T_FF_C2/D_FF_C.sch

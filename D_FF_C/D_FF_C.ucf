@@ -1,0 +1,7 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "CK" LOC = P74;
+NET "D" LOC = P80;
+NET "bQ" LOC = P5;
+NET "Q" LOC = P24;

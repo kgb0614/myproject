@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Oct 27 11:55:46 2021
+# Process ID: 8196
+# Log file: C:/usr/FPGA3/Fsub/planAhead_run_1/planAhead.log
+# Journal file: C:/usr/FPGA3/Fsub/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/usr/FPGA3/Fsub/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  A]]
+startgroup
+set_property package_pin P80 [get_ports A]
+endgroup
+startgroup
+set_property package_pin P74 [get_ports B]
+endgroup
+startgroup
+set_property package_pin P78 [get_ports K0]
+endgroup
+startgroup
+set_property package_pin P24 [get_ports D]
+endgroup
+startgroup
+set_property package_pin P23 [get_ports K]
+endgroup
+save_constraints
+set_property package_pin "" [get_ports [list  K]]
+startgroup
+set_property package_pin P23 [get_ports D]
+endgroup
+startgroup
+set_property package_pin P23 [get_ports D]
+endgroup
+startgroup
+set_property package_pin P24 [get_ports K]
+endgroup
+save_constraints

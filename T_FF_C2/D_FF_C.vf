@@ -1,0 +1,55 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : D_FF_C.vf
+// /___/   /\     Timestamp : 11/10/2021 11:28:33
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/usr/FPGA3/T_FF_C2/D_FF_C.vf -w C:/usr/FPGA3/T_FF_C2/D_FF_C.sch
+//Design Name: D_FF_C
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module D_FF_C(CK, 
+              D, 
+              bQ, 
+              Q);
+
+    input CK;
+    input D;
+   output bQ;
+   output Q;
+   
+   wire XLXN_6;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire bQ_DUMMY;
+   wire Q_DUMMY;
+   
+   assign bQ = bQ_DUMMY;
+   assign Q = Q_DUMMY;
+   NAND2  XLXI_1 (.I0(CK), 
+                 .I1(D), 
+                 .O(XLXN_9));
+   NAND2  XLXI_2 (.I0(XLXN_6), 
+                 .I1(CK), 
+                 .O(XLXN_10));
+   NAND2  XLXI_3 (.I0(bQ_DUMMY), 
+                 .I1(XLXN_9), 
+                 .O(Q_DUMMY));
+   NAND2  XLXI_4 (.I0(XLXN_10), 
+                 .I1(Q_DUMMY), 
+                 .O(bQ_DUMMY));
+   INV  XLXI_5 (.I(D), 
+               .O(XLXN_6));
+endmodule

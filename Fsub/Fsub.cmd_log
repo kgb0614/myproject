@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/usr/FPGA3/Fsub/Fsub.xst" -ofn "C:/usr/FPGA3/Fsub/Fsub.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Fsub.ucf -p xc6slx9-tqg144-3 Fsub.ngc Fsub.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Fsub_map.ncd Fsub.ngd Fsub.pcf 
+par -w -intstyle ise -ol high -mt off Fsub_map.ncd Fsub.ncd Fsub.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Fsub.twx Fsub.ncd -o Fsub.twr Fsub.pcf -ucf Fsub.ucf 
+bitgen -intstyle ise -f Fsub.ut Fsub.ncd 

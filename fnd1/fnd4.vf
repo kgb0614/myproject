@@ -1,0 +1,75 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : fnd4.vf
+// /___/   /\     Timestamp : 11/26/2019 21:26:39
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/usr/Xwork/fnd1/fnd4.vf -w C:/usr/Xwork/fnd1/fnd4.sch
+//Design Name: fnd4
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module fnd4(A0, 
+            A1, 
+            A2, 
+            A3, 
+            barD);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+   output barD;
+   
+   wire XLXN_9;
+   wire XLXN_12;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_25;
+   wire XLXN_26;
+   
+   INV  XLXI_1 (.I(A3), 
+               .O(XLXN_12));
+   INV  XLXI_2 (.I(A2), 
+               .O(XLXN_9));
+   INV  XLXI_3 (.I(A1), 
+               .O(XLXN_14));
+   INV  XLXI_4 (.I(A0), 
+               .O(XLXN_15));
+   AND4  XLXI_5 (.I0(XLXN_15), 
+                .I1(XLXN_14), 
+                .I2(A2), 
+                .I3(XLXN_12), 
+                .O(XLXN_24));
+   AND4  XLXI_6 (.I0(XLXN_15), 
+                .I1(A1), 
+                .I2(XLXN_9), 
+                .I3(A3), 
+                .O(XLXN_26));
+   AND3  XLXI_7 (.I0(A0), 
+                .I1(XLXN_14), 
+                .I2(XLXN_9), 
+                .O(XLXN_23));
+   AND3  XLXI_8 (.I0(A0), 
+                .I1(A1), 
+                .I2(A2), 
+                .O(XLXN_25));
+   OR4  XLXI_9 (.I0(XLXN_26), 
+               .I1(XLXN_25), 
+               .I2(XLXN_24), 
+               .I3(XLXN_23), 
+               .O(barD));
+endmodule

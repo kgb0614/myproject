@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Oct 27 10:25:39 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "A0" LOCATE = SITE "P43" LEVEL 1;
+COMP "A1" LOCATE = SITE "P41" LEVEL 1;
+COMP "B0" LOCATE = SITE "P46" LEVEL 1;
+COMP "A2" LOCATE = SITE "P40" LEVEL 1;
+COMP "B1" LOCATE = SITE "P45" LEVEL 1;
+COMP "B2" LOCATE = SITE "P44" LEVEL 1;
+COMP "ba" LOCATE = SITE "P102" LEVEL 1;
+COMP "bb" LOCATE = SITE "P101" LEVEL 1;
+COMP "bc" LOCATE = SITE "P100" LEVEL 1;
+COMP "bd" LOCATE = SITE "P99" LEVEL 1;
+COMP "be" LOCATE = SITE "P98" LEVEL 1;
+COMP "bf" LOCATE = SITE "P97" LEVEL 1;
+COMP "bg" LOCATE = SITE "P95" LEVEL 1;
+SCHEMATIC END;
+

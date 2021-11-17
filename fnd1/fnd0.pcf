@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Nov 26 21:51:02 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "barA" LOCATE = SITE "P102" LEVEL 1;
+COMP "barB" LOCATE = SITE "P101" LEVEL 1;
+COMP "barC" LOCATE = SITE "P100" LEVEL 1;
+COMP "barD" LOCATE = SITE "P99" LEVEL 1;
+COMP "barE" LOCATE = SITE "P98" LEVEL 1;
+COMP "barF" LOCATE = SITE "P97" LEVEL 1;
+COMP "barG" LOCATE = SITE "P95" LEVEL 1;
+COMP "A0" LOCATE = SITE "P40" LEVEL 1;
+COMP "A1" LOCATE = SITE "P41" LEVEL 1;
+COMP "A2" LOCATE = SITE "P43" LEVEL 1;
+COMP "A3" LOCATE = SITE "P44" LEVEL 1;
+SCHEMATIC END;
+

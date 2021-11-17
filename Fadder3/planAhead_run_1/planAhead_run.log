@@ -1,0 +1,112 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/usr/fpga4/Fadder3/pa.fromHdl.tcl
+# create_project -name Fadder3 -dir "C:/usr/fpga4/Fadder3/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "fadder3_1.ucf" [current_fileset -constrset]
+Adding file 'C:/usr/fpga4/Fadder3/fadder3_1.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {fnd7.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {fnd6.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {fnd5.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {fnd4.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {fnd3.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {fnd2.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {fnd1.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {fnd0.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Fadder.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {fadder3_1.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top fadder3_1 $srcset
+# add_files [list {fadder3_1.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/usr/fpga4/Fadder3/fadder3_1.vf" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/usr/fpga4/Fadder3/fadder3_1.ucf]
+Finished Parsing UCF File [C:/usr/fpga4/Fadder3/fadder3_1.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 3ca00b23
+open_rtl_design: Time (s): elapsed = 00:00:11 . Memory (MB): peak = 647.930 ; gain = 148.191
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P43 [get_ports A0]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports A1]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports A2]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports B0]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports B1]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports B2]
+endgroup
+startgroup
+set_property package_pin P102 [get_ports ba]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports bb]
+endgroup
+startgroup
+set_property package_pin P100 [get_ports bc]
+endgroup
+startgroup
+set_property package_pin P99 [get_ports bd]
+endgroup
+startgroup
+set_property package_pin P98 [get_ports be]
+endgroup
+startgroup
+set_property package_pin P97 [get_ports bf]
+endgroup
+startgroup
+set_property package_pin P95 [get_ports bg]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Oct 27 10:25:16 2021...
+INFO: [Common 17-83] Releasing license: PlanAhead

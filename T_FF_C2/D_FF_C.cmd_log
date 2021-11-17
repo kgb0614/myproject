@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym D_FF_C C:/usr/FPGA3/T_FF_C2/D_FF_C.sch C:/usr/FPGA3/T_FF_C2/D_FF_C.sym 
