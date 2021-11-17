@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "C:/usr/FPGA2/JK_FF_NE/JK_FF_NE.xst" -ofn "C:/usr/FPGA2/JK_FF_NE/JK_FF_NE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc JK_FF_NE.ucf -p xc6slx9-tqg144-3 JK_FF_NE.ngc JK_FF_NE.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o JK_FF_NE_map.ncd JK_FF_NE.ngd JK_FF_NE.pcf 
+par -w -intstyle ise -ol high -mt off JK_FF_NE_map.ncd JK_FF_NE.ncd JK_FF_NE.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml JK_FF_NE.twx JK_FF_NE.ncd -o JK_FF_NE.twr JK_FF_NE.pcf -ucf JK_FF_NE.ucf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim JK_FF_NE.ngc JK_FF_NE_synthesis.v 
+bitgen -intstyle ise -f JK_FF_NE.ut JK_FF_NE.ncd 
+xst -intstyle ise -ifn "C:/usr/FPGA2/JK_FF_NE/JK_FF_NE.xst" -ofn "C:/usr/FPGA2/JK_FF_NE/JK_FF_NE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc JK_FF_NE.ucf -p xc6slx9-tqg144-3 JK_FF_NE.ngc JK_FF_NE.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o JK_FF_NE_map.ncd JK_FF_NE.ngd JK_FF_NE.pcf 
+par -w -intstyle ise -ol high -mt off JK_FF_NE_map.ncd JK_FF_NE.ncd JK_FF_NE.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml JK_FF_NE.twx JK_FF_NE.ncd -o JK_FF_NE.twr JK_FF_NE.pcf -ucf JK_FF_NE.ucf 
+bitgen -intstyle ise -f JK_FF_NE.ut JK_FF_NE.ncd 
+xst -intstyle ise -ifn "C:/usr/FPGA3/JK_FF_NE/JK_FF_NE.xst" -ofn "C:/usr/FPGA3/JK_FF_NE/JK_FF_NE.syr" 
+xst -intstyle ise -ifn "C:/usr/FPGA3/JK_FF_NE/JK_FF_NE.xst" -ofn "C:/usr/FPGA3/JK_FF_NE/JK_FF_NE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc JK_FF_NE.ucf -p xc6slx9-tqg144-3 JK_FF_NE.ngc JK_FF_NE.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o JK_FF_NE_map.ncd JK_FF_NE.ngd JK_FF_NE.pcf 
+par -w -intstyle ise -ol high -mt off JK_FF_NE_map.ncd JK_FF_NE.ncd JK_FF_NE.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml JK_FF_NE.twx JK_FF_NE.ncd -o JK_FF_NE.twr JK_FF_NE.pcf -ucf JK_FF_NE.ucf 
+bitgen -intstyle ise -f JK_FF_NE.ut JK_FF_NE.ncd 

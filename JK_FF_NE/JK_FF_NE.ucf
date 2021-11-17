@@ -1,0 +1,11 @@
+
+
+NET "bQ" LOC = P5;
+NET "CK" LOC = P74;
+NET "J" LOC = P80;
+NET "K" LOC = P78;
+
+
+NET "CLR" LOC = P79;
+NET "SET" LOC = P75;
+NET "Q" LOC = P24;

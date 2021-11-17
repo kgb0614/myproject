@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="JK_FF_NE.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="JK_FF_NE.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="JK_FF_NE.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="JK_FF_NE.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="JK_FF_NE.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="JK_FF_NE.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="JK_FF_NE.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="JK_FF_NE.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="JK_FF_NE.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="JK_FF_NE.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="JK_FF_NE.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="JK_FF_NE.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="JK_FF_NE.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="JK_FF_NE.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="JK_FF_NE.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="JK_FF_NE.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="JK_FF_NE.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="JK_FF_NE.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="JK_FF_NE.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="JK_FF_NE.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="JK_FF_NE.vf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="JK_FF_NE.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="JK_FF_NE.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="JK_FF_NE_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="JK_FF_NE_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="JK_FF_NE_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="JK_FF_NE_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="JK_FF_NE_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="JK_FF_NE_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="JK_FF_NE_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="JK_FF_NE_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="JK_FF_NE_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="JK_FF_NE_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="JK_FF_NE_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="JK_FF_NE_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="JK_FF_NE_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="JK_FF_NE_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="JK_FF_NE_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="jk_ff_ne.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="jk_ff_ne.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="jk_ff_ne.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/JK_FF_NE_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/synthesis/JK_FF_NE_synthesis.v"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_3"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1637113499" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1637113499">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113501" xil_pn:in_ck="3859494954648716894" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1561317560707369728" xil_pn:start_ts="1637113499">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="JK_FF_NE.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113501" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6536947857120572329" xil_pn:start_ts="1637113501">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113501" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1637113501">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113501" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-3097900391341644158" xil_pn:start_ts="1637113501">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113501" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1637113501">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113501" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2465813454831841313" xil_pn:start_ts="1637113501">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113509" xil_pn:in_ck="116954392565112732" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="6432212999633114783" xil_pn:start_ts="1637113501">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="JK_FF_NE.jhd"/>
+      <outfile xil_pn:name="JK_FF_NE.lso"/>
+      <outfile xil_pn:name="JK_FF_NE.ngc"/>
+      <outfile xil_pn:name="JK_FF_NE.ngr"/>
+      <outfile xil_pn:name="JK_FF_NE.prj"/>
+      <outfile xil_pn:name="JK_FF_NE.stx"/>
+      <outfile xil_pn:name="JK_FF_NE.syr"/>
+      <outfile xil_pn:name="JK_FF_NE.xst"/>
+      <outfile xil_pn:name="JK_FF_NE_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113509" xil_pn:in_ck="3859494954648719070" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784892395198674708" xil_pn:start_ts="1637113509">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113515" xil_pn:in_ck="2433189597480395894" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5714824047148649608" xil_pn:start_ts="1637113509">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="JK_FF_NE.bld"/>
+      <outfile xil_pn:name="JK_FF_NE.ngd"/>
+      <outfile xil_pn:name="JK_FF_NE_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113524" xil_pn:in_ck="4101079112433380855" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1637113515">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="JK_FF_NE.pcf"/>
+      <outfile xil_pn:name="JK_FF_NE_map.map"/>
+      <outfile xil_pn:name="JK_FF_NE_map.mrp"/>
+      <outfile xil_pn:name="JK_FF_NE_map.ncd"/>
+      <outfile xil_pn:name="JK_FF_NE_map.ngm"/>
+      <outfile xil_pn:name="JK_FF_NE_map.xrpt"/>
+      <outfile xil_pn:name="JK_FF_NE_summary.xml"/>
+      <outfile xil_pn:name="JK_FF_NE_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113536" xil_pn:in_ck="1029468479417446416" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1637113524">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="JK_FF_NE.ncd"/>
+      <outfile xil_pn:name="JK_FF_NE.pad"/>
+      <outfile xil_pn:name="JK_FF_NE.par"/>
+      <outfile xil_pn:name="JK_FF_NE.ptwx"/>
+      <outfile xil_pn:name="JK_FF_NE.unroutes"/>
+      <outfile xil_pn:name="JK_FF_NE.xpi"/>
+      <outfile xil_pn:name="JK_FF_NE_pad.csv"/>
+      <outfile xil_pn:name="JK_FF_NE_pad.txt"/>
+      <outfile xil_pn:name="JK_FF_NE_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113548" xil_pn:in_ck="3859494954648711445" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1637113538">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="JK_FF_NE.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="jk_ff_ne.bgn"/>
+      <outfile xil_pn:name="jk_ff_ne.bit"/>
+      <outfile xil_pn:name="jk_ff_ne.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113551" xil_pn:in_ck="5525899260772660127" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="4500415081596399796" xil_pn:start_ts="1637113551">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637113536" xil_pn:in_ck="5300592023153985395" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1637113531">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="JK_FF_NE.twr"/>
+      <outfile xil_pn:name="JK_FF_NE.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1637041373" xil_pn:in_ck="4101079112433380855" xil_pn:name="TRAN_createTimingConstraints" xil_pn:start_ts="1637041371">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1637041358" xil_pn:in_ck="3859494954648711576" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="-1764935231679633665" xil_pn:start_ts="1637041355">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/synthesis/JK_FF_NE_synthesis.nlf"/>
+      <outfile xil_pn:name="netgen/synthesis/JK_FF_NE_synthesis.v"/>
+    </transform>
+  </transforms>
+
+</generated_project>

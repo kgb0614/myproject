@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Wed Nov 17 09:54:48 2021
+
+drc -z JK_FF_NE.ncd JK_FF_NE.pcf
+
+DRC detected 0 errors and 0 warnings.

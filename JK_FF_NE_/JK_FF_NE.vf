@@ -1,0 +1,75 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : JK_FF_NE.vf
+// /___/   /\     Timestamp : 11/17/2021 09:52:59
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/FPGA3/JK_FF_NE/JK_FF_NE.vf -w C:/FPGA3/JK_FF_NE/JK_FF_NE.sch
+//Design Name: JK_FF_NE
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module JK_FF_NE(CK, 
+                J, 
+                K, 
+                bQ, 
+                Q);
+
+    input CK;
+    input J;
+    input K;
+   output bQ;
+   output Q;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_17;
+   wire bQ_DUMMY;
+   wire Q_DUMMY;
+   
+   assign bQ = bQ_DUMMY;
+   assign Q = Q_DUMMY;
+   NAND3  XLXI_1 (.I0(CK), 
+                 .I1(J), 
+                 .I2(bQ_DUMMY), 
+                 .O(XLXN_1));
+   NAND3  XLXI_2 (.I0(Q_DUMMY), 
+                 .I1(K), 
+                 .I2(CK), 
+                 .O(XLXN_4));
+   NAND2  XLXI_3 (.I0(XLXN_5), 
+                 .I1(XLXN_1), 
+                 .O(XLXN_2));
+   NAND2  XLXI_4 (.I0(XLXN_4), 
+                 .I1(XLXN_2), 
+                 .O(XLXN_5));
+   NAND2  XLXI_5 (.I0(XLXN_17), 
+                 .I1(XLXN_2), 
+                 .O(XLXN_3));
+   NAND2  XLXI_6 (.I0(XLXN_5), 
+                 .I1(XLXN_17), 
+                 .O(XLXN_6));
+   NAND2  XLXI_7 (.I0(bQ_DUMMY), 
+                 .I1(XLXN_3), 
+                 .O(Q_DUMMY));
+   NAND2  XLXI_8 (.I0(XLXN_6), 
+                 .I1(Q_DUMMY), 
+                 .O(bQ_DUMMY));
+   INV  XLXI_9 (.I(CK), 
+               .O(XLXN_17));
+endmodule
