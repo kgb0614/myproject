@@ -1,0 +1,10 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/Mod4_A1/Mod4_A1.vf,-w,C:/usr/FPGA3/Mod4_A1/Mod4_A1.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/Mod4_A1/fnd5.vf,-w,C:/usr/FPGA3/Mod4_A1/fnd5.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/Mod4_A1/JK_FF_NE.vf,-w,C:/usr/FPGA3/Mod4_A1/JK_FF_NE.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/Mod4_A1/fnd6.vf,-w,C:/usr/FPGA3/Mod4_A1/fnd6.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/Mod4_A1/fnd7.vf,-w,C:/usr/FPGA3/Mod4_A1/fnd7.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/Mod4_A1/fnd4.vf,-w,C:/usr/FPGA3/Mod4_A1/fnd4.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/Mod4_A1/fnd1.vf,-w,C:/usr/FPGA3/Mod4_A1/fnd1.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/Mod4_A1/fnd0.vf,-w,C:/usr/FPGA3/Mod4_A1/fnd0.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/Mod4_A1/fnd3.vf,-w,C:/usr/FPGA3/Mod4_A1/fnd3.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/Mod4_A1/fnd2.vf,-w,C:/usr/FPGA3/Mod4_A1/fnd2.sch

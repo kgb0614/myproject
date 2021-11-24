@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym JK_FF_NE C:/usr/FPGA3/Mod4_A1/JK_FF_NE.sch C:/usr/FPGA3/Mod4_A1/JK_FF_NE.sym 

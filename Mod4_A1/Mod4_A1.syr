@@ -1,0 +1,439 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.36 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.36 secs
+ 
+--> Reading design: Mod4_A1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Mod4_A1.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Mod4_A1"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : Mod4_A1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\usr\FPGA3\Mod4_A1\fnd7.vf" into library work
+Parsing module <fnd7>.
+Analyzing Verilog file "C:\usr\FPGA3\Mod4_A1\fnd6.vf" into library work
+Parsing module <fnd6>.
+Analyzing Verilog file "C:\usr\FPGA3\Mod4_A1\fnd5.vf" into library work
+Parsing module <fnd5>.
+Analyzing Verilog file "C:\usr\FPGA3\Mod4_A1\fnd4.vf" into library work
+Parsing module <fnd4>.
+Analyzing Verilog file "C:\usr\FPGA3\Mod4_A1\fnd3.vf" into library work
+Parsing module <fnd3>.
+Analyzing Verilog file "C:\usr\FPGA3\Mod4_A1\fnd2.vf" into library work
+Parsing module <fnd2>.
+Analyzing Verilog file "C:\usr\FPGA3\Mod4_A1\fnd1.vf" into library work
+Parsing module <fnd1>.
+Analyzing Verilog file "C:\usr\FPGA3\Mod4_A1\JK_FF_NE.vf" into library work
+Parsing module <JK_FF_NE>.
+Analyzing Verilog file "C:\usr\FPGA3\Mod4_A1\fnd0.vf" into library work
+Parsing module <fnd7_MUSER_fnd0>.
+Parsing module <fnd6_MUSER_fnd0>.
+Parsing module <fnd5_MUSER_fnd0>.
+Parsing module <fnd4_MUSER_fnd0>.
+Parsing module <fnd3_MUSER_fnd0>.
+Parsing module <fnd2_MUSER_fnd0>.
+Parsing module <fnd1_MUSER_fnd0>.
+Parsing module <fnd0>.
+Analyzing Verilog file "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf" into library work
+Parsing module <fnd7_MUSER_Mod4_A1>.
+Parsing module <fnd6_MUSER_Mod4_A1>.
+Parsing module <fnd5_MUSER_Mod4_A1>.
+Parsing module <fnd4_MUSER_Mod4_A1>.
+Parsing module <fnd3_MUSER_Mod4_A1>.
+Parsing module <fnd2_MUSER_Mod4_A1>.
+Parsing module <fnd1_MUSER_Mod4_A1>.
+Parsing module <fnd0_MUSER_Mod4_A1>.
+Parsing module <JK_FF_NE_MUSER_Mod4_A1>.
+Parsing module <Mod4_A1>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Mod4_A1>.
+
+Elaborating module <JK_FF_NE_MUSER_Mod4_A1>.
+
+Elaborating module <NAND2>.
+
+Elaborating module <NAND3>.
+
+Elaborating module <INV>.
+
+Elaborating module <fnd0_MUSER_Mod4_A1>.
+
+Elaborating module <fnd1_MUSER_Mod4_A1>.
+
+Elaborating module <AND4>.
+
+Elaborating module <AND3>.
+
+Elaborating module <OR4>.
+
+Elaborating module <fnd2_MUSER_Mod4_A1>.
+
+Elaborating module <fnd3_MUSER_Mod4_A1>.
+
+Elaborating module <OR3>.
+
+Elaborating module <fnd4_MUSER_Mod4_A1>.
+
+Elaborating module <fnd5_MUSER_Mod4_A1>.
+
+Elaborating module <AND2>.
+
+Elaborating module <fnd6_MUSER_Mod4_A1>.
+
+Elaborating module <fnd7_MUSER_Mod4_A1>.
+
+Elaborating module <VCC>.
+
+Elaborating module <GND>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Mod4_A1>.
+    Related source file is "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf".
+INFO:Xst:3210 - "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf" line 541: Output port <bQ> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf" line 548: Output port <bQ> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Mod4_A1> synthesized.
+
+Synthesizing Unit <JK_FF_NE_MUSER_Mod4_A1>.
+    Related source file is "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf".
+    Summary:
+	no macro.
+Unit <JK_FF_NE_MUSER_Mod4_A1> synthesized.
+
+Synthesizing Unit <fnd0_MUSER_Mod4_A1>.
+    Related source file is "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf".
+    Summary:
+	no macro.
+Unit <fnd0_MUSER_Mod4_A1> synthesized.
+
+Synthesizing Unit <fnd1_MUSER_Mod4_A1>.
+    Related source file is "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf".
+    Summary:
+	no macro.
+Unit <fnd1_MUSER_Mod4_A1> synthesized.
+
+Synthesizing Unit <fnd2_MUSER_Mod4_A1>.
+    Related source file is "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf".
+    Summary:
+	no macro.
+Unit <fnd2_MUSER_Mod4_A1> synthesized.
+
+Synthesizing Unit <fnd3_MUSER_Mod4_A1>.
+    Related source file is "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf".
+    Summary:
+	no macro.
+Unit <fnd3_MUSER_Mod4_A1> synthesized.
+
+Synthesizing Unit <fnd4_MUSER_Mod4_A1>.
+    Related source file is "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf".
+    Summary:
+	no macro.
+Unit <fnd4_MUSER_Mod4_A1> synthesized.
+
+Synthesizing Unit <fnd5_MUSER_Mod4_A1>.
+    Related source file is "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf".
+    Summary:
+	no macro.
+Unit <fnd5_MUSER_Mod4_A1> synthesized.
+
+Synthesizing Unit <fnd6_MUSER_Mod4_A1>.
+    Related source file is "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf".
+    Summary:
+	no macro.
+Unit <fnd6_MUSER_Mod4_A1> synthesized.
+
+Synthesizing Unit <fnd7_MUSER_Mod4_A1>.
+    Related source file is "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf".
+    Summary:
+	no macro.
+Unit <fnd7_MUSER_Mod4_A1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit JK_FF_NE_MUSER_Mod4_A1 : the following signal(s) form a combinatorial loop: XLXN_5, bQ_DUMMY, XLXN_4, Q_DUMMY, XLXN_7.
+
+Optimizing unit <Mod4_A1> ...
+
+Optimizing unit <JK_FF_NE_MUSER_Mod4_A1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Mod4_A1, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Mod4_A1.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 68
+#      AND2                        : 1
+#      AND3                        : 13
+#      AND4                        : 11
+#      GND                         : 1
+#      INV                         : 34
+#      OR3                         : 3
+#      OR4                         : 4
+#      VCC                         : 1
+# IO Buffers                       : 10
+#      IBUF                        : 3
+#      OBUF                        : 7
+# Logical                          : 16
+#      NAND2                       : 4
+#      NAND3                       : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   34  out of   5720     0%  
+    Number used as Logic:                34  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     34
+   Number with an unused Flip Flop:      34  out of     34   100%  
+   Number with an unused LUT:             0  out of     34     0%  
+   Number of fully used LUT-FF pairs:     0  out of     34     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    102     9%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 23.016ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1365 / 7
+-------------------------------------------------------------------------
+Delay:               23.016ns (Levels of Logic = 17)
+  Source:            SET (PAD)
+  Destination:       bb (PAD)
+
+  Data Path: SET to bb
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  SET_IBUF (SET_IBUF)
+     INV:I->O              2   0.568   0.864  XLXI_1/XLXI_19 (XLXI_1/XLXN_45)
+     NAND3:I2->O           2   0.320   0.864  XLXI_1/XLXI_14 (XLXI_1/XLXN_25)
+     NAND3:I2->O           2   0.320   0.981  XLXI_1/XLXI_13 (XLXI_1/XLXN_5)
+     NAND2:I0->O           1   0.203   0.924  XLXI_1/XLXI_4 (XLXI_1/XLXN_7)
+     NAND3:I1->O           2   0.223   0.981  XLXI_1/XLXI_17 (XLXI_1/bQ_DUMMY)
+     NAND3:I0->O          25   0.203   1.557  XLXI_1/XLXI_15 (XLXN_10)
+     NAND3:I0->O           1   0.203   0.924  XLXI_2/XLXI_10 (XLXI_2/XLXN_16)
+     NAND3:I1->O           2   0.223   0.864  XLXI_2/XLXI_14 (XLXI_2/XLXN_25)
+     NAND3:I2->O           2   0.320   0.981  XLXI_2/XLXI_13 (XLXI_2/XLXN_5)
+     NAND2:I0->O           1   0.203   0.924  XLXI_2/XLXI_4 (XLXI_2/XLXN_7)
+     NAND3:I1->O           2   0.223   0.981  XLXI_2/XLXI_17 (XLXI_2/bQ_DUMMY)
+     NAND3:I0->O          19   0.203   1.071  XLXI_2/XLXI_15 (XLXN_11)
+     INV:I->O              2   0.568   0.961  XLXI_3/XLXI_1/XLXI_3 (XLXI_3/XLXI_1/XLXN_11)
+     AND4:I1->O            1   0.223   0.924  XLXI_3/XLXI_1/XLXI_6 (XLXI_3/XLXI_1/XLXN_39)
+     OR4:I1->O             1   0.223   0.579  XLXI_3/XLXI_1/XLXI_25 (ba_OBUF)
+     OBUF:I->O                 2.571          ba_OBUF (ba)
+    ----------------------------------------
+    Total                     23.016ns (8.019ns logic, 14.997ns route)
+                                       (34.8% logic, 65.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.76 secs
+ 
+--> 
+
+Total memory usage is 4485808 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

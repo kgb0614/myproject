@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan6 -refsym fnd0 C:/usr/FPGA3/Mod4_A1/fnd0.sch C:/usr/FPGA3/Mod4_A1/fnd0.sym 
+sch2sym -intstyle ise -family spartan6 -refsym fnd0 C:/usr/FPGA3/Mod4_A1/fnd0.sch C:/usr/FPGA3/Mod4_A1/fnd0.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym fnd0 C:/usr/FPGA3/Mod4_A1/fnd0.sch C:/usr/FPGA3/Mod4_A1/fnd0.sym 
