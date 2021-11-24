@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/usr/FPGA3/Mod5_A/Mod5_A.xst" -ofn "C:/usr/FPGA3/Mod5_A/Mod5_A.syr" 
+xst -intstyle ise -ifn "C:/usr/FPGA3/Mod5_A/Mod5_A.xst" -ofn "C:/usr/FPGA3/Mod5_A/Mod5_A.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mod5_A.ucf -p xc6slx9-tqg144-3 Mod5_A.ngc Mod5_A.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mod5_A_map.ncd Mod5_A.ngd Mod5_A.pcf 
+par -w -intstyle ise -ol high -mt off Mod5_A_map.ncd Mod5_A.ncd Mod5_A.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mod5_A.twx Mod5_A.ncd -o Mod5_A.twr Mod5_A.pcf -ucf Mod5_A.ucf 
+bitgen -intstyle ise -f Mod5_A.ut Mod5_A.ncd 
+xst -intstyle ise -ifn "C:/usr/FPGA3/Mod5_A/Mod5_A.xst" -ofn "C:/usr/FPGA3/Mod5_A/Mod5_A.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mod5_A.ucf -p xc6slx9-tqg144-3 Mod5_A.ngc Mod5_A.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mod5_A_map.ncd Mod5_A.ngd Mod5_A.pcf 
+par -w -intstyle ise -ol high -mt off Mod5_A_map.ncd Mod5_A.ncd Mod5_A.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mod5_A.twx Mod5_A.ncd -o Mod5_A.twr Mod5_A.pcf -ucf Mod5_A.ucf 
+bitgen -intstyle ise -f Mod5_A.ut Mod5_A.ncd 
