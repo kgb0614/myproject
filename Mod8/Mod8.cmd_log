@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/usr/FPGA3/Mod8/Mod8.xst" -ofn "C:/usr/FPGA3/Mod8/Mod8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mod8.ucf -p xc6slx9-tqg144-3 Mod8.ngc Mod8.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mod8_map.ncd Mod8.ngd Mod8.pcf 
+par -w -intstyle ise -ol high -mt off Mod8_map.ncd Mod8.ncd Mod8.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mod8.twx Mod8.ncd -o Mod8.twr Mod8.pcf -ucf Mod8.ucf 
+bitgen -intstyle ise -f Mod8.ut Mod8.ncd 

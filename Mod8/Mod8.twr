@@ -1,0 +1,72 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Mod8.twx Mod8.ncd -o Mod8.twr Mod8.pcf -ucf Mod8.ucf
+
+Design file:              Mod8.ncd
+Physical constraint file: Mod8.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+CK             |ba             |   16.503|
+CK             |bb             |   16.510|
+CK             |bc             |   16.280|
+CK             |bd             |   16.465|
+CK             |be             |   16.413|
+CK             |bf             |   16.961|
+CK             |bg             |   16.339|
+CLR            |ba             |   14.671|
+CLR            |bb             |   14.678|
+CLR            |bc             |   14.448|
+CLR            |bd             |   14.633|
+CLR            |be             |   14.581|
+CLR            |bf             |   15.129|
+CLR            |bg             |   14.507|
+SET            |ba             |   16.133|
+SET            |bb             |   16.140|
+SET            |bc             |   15.910|
+SET            |bd             |   16.095|
+SET            |be             |   16.043|
+SET            |bf             |   16.591|
+SET            |bg             |   15.969|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Dec 01 10:46:05 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+
