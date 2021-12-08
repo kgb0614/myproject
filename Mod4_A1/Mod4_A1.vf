@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Mod4_A1.vf
-// /___/   /\     Timestamp : 11/24/2021 10:05:54
+// /___/   /\     Timestamp : 11/24/2021 10:43:13
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -18,6 +18,75 @@
 //    This verilog netlist is translated from an ECS schematic.It can be 
 //    synthesized and simulated, but it should not be modified. 
 //
+`timescale 1ns / 1ps
+
+module JK_FF_NE_MUSER_Mod4_A1(CK, 
+                              CLR, 
+                              J, 
+                              K, 
+                              SET, 
+                              bQ, 
+                              Q);
+
+    input CK;
+    input CLR;
+    input J;
+    input K;
+    input SET;
+   output bQ;
+   output Q;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_7;
+   wire XLXN_16;
+   wire XLXN_25;
+   wire XLXN_27;
+   wire XLXN_43;
+   wire XLXN_45;
+   wire bQ_DUMMY;
+   wire Q_DUMMY;
+   
+   assign bQ = bQ_DUMMY;
+   assign Q = Q_DUMMY;
+   NAND2  XLXI_3 (.I0(XLXN_27), 
+                 .I1(XLXN_25), 
+                 .O(XLXN_3));
+   NAND2  XLXI_4 (.I0(XLXN_5), 
+                 .I1(XLXN_27), 
+                 .O(XLXN_7));
+   NAND3  XLXI_8 (.I0(Q_DUMMY), 
+                 .I1(K), 
+                 .I2(CK), 
+                 .O(XLXN_4));
+   INV  XLXI_9 (.I(CK), 
+               .O(XLXN_27));
+   NAND3  XLXI_10 (.I0(CK), 
+                  .I1(J), 
+                  .I2(bQ_DUMMY), 
+                  .O(XLXN_16));
+   NAND3  XLXI_13 (.I0(XLXN_43), 
+                  .I1(XLXN_4), 
+                  .I2(XLXN_25), 
+                  .O(XLXN_5));
+   NAND3  XLXI_14 (.I0(XLXN_5), 
+                  .I1(XLXN_16), 
+                  .I2(XLXN_45), 
+                  .O(XLXN_25));
+   NAND3  XLXI_15 (.I0(bQ_DUMMY), 
+                  .I1(XLXN_3), 
+                  .I2(XLXN_45), 
+                  .O(Q_DUMMY));
+   NAND3  XLXI_17 (.I0(XLXN_43), 
+                  .I1(XLXN_7), 
+                  .I2(Q_DUMMY), 
+                  .O(bQ_DUMMY));
+   INV  XLXI_18 (.I(CLR), 
+                .O(XLXN_43));
+   INV  XLXI_19 (.I(SET), 
+                .O(XLXN_45));
+endmodule
 `timescale 1ns / 1ps
 
 module fnd7_MUSER_Mod4_A1(A0, 
@@ -442,75 +511,6 @@ module fnd0_MUSER_Mod4_A1(A0,
 endmodule
 `timescale 1ns / 1ps
 
-module JK_FF_NE_MUSER_Mod4_A1(CK, 
-                              CLR, 
-                              J, 
-                              K, 
-                              SET, 
-                              bQ, 
-                              Q);
-
-    input CK;
-    input CLR;
-    input J;
-    input K;
-    input SET;
-   output bQ;
-   output Q;
-   
-   wire XLXN_3;
-   wire XLXN_4;
-   wire XLXN_5;
-   wire XLXN_7;
-   wire XLXN_16;
-   wire XLXN_25;
-   wire XLXN_27;
-   wire XLXN_43;
-   wire XLXN_45;
-   wire bQ_DUMMY;
-   wire Q_DUMMY;
-   
-   assign bQ = bQ_DUMMY;
-   assign Q = Q_DUMMY;
-   NAND2  XLXI_3 (.I0(XLXN_27), 
-                 .I1(XLXN_25), 
-                 .O(XLXN_3));
-   NAND2  XLXI_4 (.I0(XLXN_5), 
-                 .I1(XLXN_27), 
-                 .O(XLXN_7));
-   NAND3  XLXI_8 (.I0(Q_DUMMY), 
-                 .I1(K), 
-                 .I2(CK), 
-                 .O(XLXN_4));
-   INV  XLXI_9 (.I(CK), 
-               .O(XLXN_27));
-   NAND3  XLXI_10 (.I0(CK), 
-                  .I1(J), 
-                  .I2(bQ_DUMMY), 
-                  .O(XLXN_16));
-   NAND3  XLXI_13 (.I0(XLXN_43), 
-                  .I1(XLXN_4), 
-                  .I2(XLXN_25), 
-                  .O(XLXN_5));
-   NAND3  XLXI_14 (.I0(XLXN_5), 
-                  .I1(XLXN_16), 
-                  .I2(XLXN_45), 
-                  .O(XLXN_25));
-   NAND3  XLXI_15 (.I0(bQ_DUMMY), 
-                  .I1(XLXN_3), 
-                  .I2(XLXN_45), 
-                  .O(Q_DUMMY));
-   NAND3  XLXI_17 (.I0(XLXN_43), 
-                  .I1(XLXN_7), 
-                  .I2(Q_DUMMY), 
-                  .O(bQ_DUMMY));
-   INV  XLXI_18 (.I(CLR), 
-                .O(XLXN_43));
-   INV  XLXI_19 (.I(SET), 
-                .O(XLXN_45));
-endmodule
-`timescale 1ns / 1ps
-
 module Mod4_A1(CK, 
                CLR, 
                SET, 
@@ -534,28 +534,31 @@ module Mod4_A1(CK,
    output bg;
    
    wire XLXN_2;
-   wire XLXN_10;
-   wire XLXN_11;
-   wire XLXN_12;
+   wire XLXN_31;
+   wire XLXN_33;
+   wire XLXN_34;
+   wire XLXN_35;
+   wire XLXN_36;
+   wire XLXN_38;
    
    JK_FF_NE_MUSER_Mod4_A1  XLXI_1 (.CK(CK), 
                                   .CLR(CLR), 
                                   .J(XLXN_2), 
                                   .K(XLXN_2), 
                                   .SET(SET), 
-                                  .bQ(), 
-                                  .Q(XLXN_10));
-   JK_FF_NE_MUSER_Mod4_A1  XLXI_2 (.CK(XLXN_10), 
+                                  .bQ(XLXN_36), 
+                                  .Q(XLXN_34));
+   JK_FF_NE_MUSER_Mod4_A1  XLXI_2 (.CK(XLXN_36), 
                                   .CLR(CLR), 
                                   .J(XLXN_2), 
                                   .K(XLXN_2), 
                                   .SET(SET), 
-                                  .bQ(), 
-                                  .Q(XLXN_11));
-   fnd0_MUSER_Mod4_A1  XLXI_3 (.A0(XLXN_10), 
-                              .A1(XLXN_11), 
-                              .A2(XLXN_12), 
-                              .A3(XLXN_12), 
+                                  .bQ(XLXN_38), 
+                                  .Q(XLXN_35));
+   fnd0_MUSER_Mod4_A1  XLXI_3 (.A0(XLXN_34), 
+                              .A1(XLXN_35), 
+                              .A2(XLXN_31), 
+                              .A3(XLXN_33), 
                               .barA(ba), 
                               .barB(bb), 
                               .barC(bc), 
@@ -564,5 +567,12 @@ module Mod4_A1(CK,
                               .barF(bf), 
                               .barG(bg));
    VCC  XLXI_4 (.P(XLXN_2));
-   GND  XLXI_5 (.G(XLXN_12));
+   GND  XLXI_5 (.G(XLXN_33));
+   JK_FF_NE_MUSER_Mod4_A1  XLXI_6 (.CK(XLXN_38), 
+                                  .CLR(CLR), 
+                                  .J(XLXN_2), 
+                                  .K(XLXN_2), 
+                                  .SET(SET), 
+                                  .bQ(), 
+                                  .Q(XLXN_31));
 endmodule

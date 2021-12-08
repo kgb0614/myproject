@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: Mod4_A1.prj
 
@@ -131,6 +131,7 @@ Parsing module <fnd2_MUSER_fnd0>.
 Parsing module <fnd1_MUSER_fnd0>.
 Parsing module <fnd0>.
 Analyzing Verilog file "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf" into library work
+Parsing module <JK_FF_NE_MUSER_Mod4_A1>.
 Parsing module <fnd7_MUSER_Mod4_A1>.
 Parsing module <fnd6_MUSER_Mod4_A1>.
 Parsing module <fnd5_MUSER_Mod4_A1>.
@@ -139,7 +140,6 @@ Parsing module <fnd3_MUSER_Mod4_A1>.
 Parsing module <fnd2_MUSER_Mod4_A1>.
 Parsing module <fnd1_MUSER_Mod4_A1>.
 Parsing module <fnd0_MUSER_Mod4_A1>.
-Parsing module <JK_FF_NE_MUSER_Mod4_A1>.
 Parsing module <Mod4_A1>.
 
 =========================================================================
@@ -192,8 +192,7 @@ Elaborating module <GND>.
 
 Synthesizing Unit <Mod4_A1>.
     Related source file is "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf".
-INFO:Xst:3210 - "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf" line 541: Output port <bQ> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf" line 548: Output port <bQ> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf" line 571: Output port <bQ> of the instance <XLXI_6> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Mod4_A1> synthesized.
@@ -272,7 +271,7 @@ Found no macro
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2170 - Unit JK_FF_NE_MUSER_Mod4_A1 : the following signal(s) form a combinatorial loop: XLXN_5, bQ_DUMMY, XLXN_4, Q_DUMMY, XLXN_7.
+WARNING:Xst:2170 - Unit JK_FF_NE_MUSER_Mod4_A1 : the following signal(s) form a combinatorial loop: XLXN_7, bQ_DUMMY, Q_DUMMY, XLXN_4, XLXN_5.
 
 Optimizing unit <Mod4_A1> ...
 
@@ -309,21 +308,21 @@ Top Level Output File Name         : Mod4_A1.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 68
+# BELS                             : 71
 #      AND2                        : 1
 #      AND3                        : 13
 #      AND4                        : 11
 #      GND                         : 1
-#      INV                         : 34
+#      INV                         : 37
 #      OR3                         : 3
 #      OR4                         : 4
 #      VCC                         : 1
 # IO Buffers                       : 10
 #      IBUF                        : 3
 #      OBUF                        : 7
-# Logical                          : 16
-#      NAND2                       : 4
-#      NAND3                       : 12
+# Logical                          : 24
+#      NAND2                       : 6
+#      NAND3                       : 18
 
 Device utilization summary:
 ---------------------------
@@ -332,14 +331,14 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   34  out of   5720     0%  
-    Number used as Logic:                34  out of   5720     0%  
+ Number of Slice LUTs:                   37  out of   5720     0%  
+    Number used as Logic:                37  out of   5720     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     34
-   Number with an unused Flip Flop:      34  out of     34   100%  
-   Number with an unused LUT:             0  out of     34     0%  
-   Number of fully used LUT-FF pairs:     0  out of     34     0%  
+ Number of LUT Flip Flop pairs used:     37
+   Number with an unused Flip Flop:      37  out of     37   100%  
+   Number with an unused LUT:             0  out of     37     0%  
+   Number of fully used LUT-FF pairs:     0  out of     37     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
@@ -379,7 +378,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 23.016ns
+   Maximum combinational path delay: 27.394ns
 
 Timing Details:
 ---------------
@@ -387,36 +386,40 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1365 / 7
+  Total number of paths / destination ports: 3365 / 7
 -------------------------------------------------------------------------
-Delay:               23.016ns (Levels of Logic = 17)
+Delay:               27.394ns (Levels of Logic = 21)
   Source:            SET (PAD)
-  Destination:       bb (PAD)
+  Destination:       ba (PAD)
 
-  Data Path: SET to bb
+  Data Path: SET to ba
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.616  SET_IBUF (SET_IBUF)
+     IBUF:I->O             3   1.222   0.650  SET_IBUF (SET_IBUF)
      INV:I->O              2   0.568   0.864  XLXI_1/XLXI_19 (XLXI_1/XLXN_45)
      NAND3:I2->O           2   0.320   0.864  XLXI_1/XLXI_14 (XLXI_1/XLXN_25)
      NAND3:I2->O           2   0.320   0.981  XLXI_1/XLXI_13 (XLXI_1/XLXN_5)
      NAND2:I0->O           1   0.203   0.924  XLXI_1/XLXI_4 (XLXI_1/XLXN_7)
-     NAND3:I1->O           2   0.223   0.981  XLXI_1/XLXI_17 (XLXI_1/bQ_DUMMY)
-     NAND3:I0->O          25   0.203   1.557  XLXI_1/XLXI_15 (XLXN_10)
+     NAND3:I1->O           5   0.223   1.079  XLXI_1/XLXI_17 (XLXN_36)
      NAND3:I0->O           1   0.203   0.924  XLXI_2/XLXI_10 (XLXI_2/XLXN_16)
      NAND3:I1->O           2   0.223   0.864  XLXI_2/XLXI_14 (XLXI_2/XLXN_25)
      NAND3:I2->O           2   0.320   0.981  XLXI_2/XLXI_13 (XLXI_2/XLXN_5)
      NAND2:I0->O           1   0.203   0.924  XLXI_2/XLXI_4 (XLXI_2/XLXN_7)
-     NAND3:I1->O           2   0.223   0.981  XLXI_2/XLXI_17 (XLXI_2/bQ_DUMMY)
-     NAND3:I0->O          19   0.203   1.071  XLXI_2/XLXI_15 (XLXN_11)
-     INV:I->O              2   0.568   0.961  XLXI_3/XLXI_1/XLXI_3 (XLXI_3/XLXI_1/XLXN_11)
-     AND4:I1->O            1   0.223   0.924  XLXI_3/XLXI_1/XLXI_6 (XLXI_3/XLXI_1/XLXN_39)
-     OR4:I1->O             1   0.223   0.579  XLXI_3/XLXI_1/XLXI_25 (ba_OBUF)
+     NAND3:I1->O           5   0.223   1.079  XLXI_2/XLXI_17 (XLXN_38)
+     NAND3:I0->O           1   0.203   0.924  XLXI_6/XLXI_10 (XLXI_6/XLXN_16)
+     NAND3:I1->O           2   0.223   0.864  XLXI_6/XLXI_14 (XLXI_6/XLXN_25)
+     NAND3:I2->O           2   0.320   0.981  XLXI_6/XLXI_13 (XLXI_6/XLXN_5)
+     NAND2:I0->O           1   0.203   0.924  XLXI_6/XLXI_4 (XLXI_6/XLXN_7)
+     NAND3:I1->O           2   0.223   0.981  XLXI_6/XLXI_17 (XLXI_6/bQ_DUMMY)
+     NAND3:I0->O          22   0.203   1.133  XLXI_6/XLXI_15 (XLXN_31)
+     INV:I->O              2   0.568   0.864  XLXI_3/XLXI_1/XLXI_2 (XLXI_3/XLXI_1/XLXN_10)
+     AND4:I2->O            1   0.320   0.944  XLXI_3/XLXI_1/XLXI_24 (XLXI_3/XLXI_1/XLXN_40)
+     OR4:I0->O             1   0.203   0.579  XLXI_3/XLXI_1/XLXI_25 (ba_OBUF)
      OBUF:I->O                 2.571          ba_OBUF (ba)
     ----------------------------------------
-    Total                     23.016ns (8.019ns logic, 14.997ns route)
-                                       (34.8% logic, 65.2% route)
+    Total                     27.394ns (9.065ns logic, 18.330ns route)
+                                       (33.1% logic, 66.9% route)
 
 =========================================================================
 
@@ -426,8 +429,8 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.76 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.89 secs
  
 --> 
 
@@ -435,5 +438,5 @@ Total memory usage is 4485808 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

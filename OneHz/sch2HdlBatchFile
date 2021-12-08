@@ -1,0 +1,4 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/OneHz/OneHz.vf,-w,C:/usr/FPGA3/OneHz/OneHz.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/OneHz/Mod10.vf,-w,C:/usr/FPGA3/OneHz/Mod10.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/OneHz/Mod5.vf,-w,C:/usr/FPGA3/OneHz/Mod5.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/usr/FPGA3/OneHz/JK_FF_NE.vf,-w,C:/usr/FPGA3/OneHz/JK_FF_NE.sch

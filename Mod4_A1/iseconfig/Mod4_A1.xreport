@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-11-24T10:03:03</DateModified>
+  <DateModified>2021-11-24T10:56:40</DateModified>
   <ModuleName>Mod4_A1</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/usr/FPGA3/Mod4_A1/iseconfig/Mod4_A1.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/usr/FPGA3/Mod4_A1</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/usr/FPGA3/Mod4_A1\</ImplementationReportsDirectory>
   <DateInitialized>2021-11-24T09:40:17</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

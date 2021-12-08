@@ -1,0 +1,4 @@
+verilog work "JK_FF_NE.vf"
+verilog work "Mod5.vf"
+verilog work "Mod10.vf"
+verilog work "OneHz.vf"

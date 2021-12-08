@@ -1,0 +1,10 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "CK" LOC = P55;
+NET "CLR" LOC = P79;
+NET "SET" LOC = P75;
+NET "S1" LOC = P23;
+NET "S01" LOC = P22;
+NET "S10" LOC = P24;
+NET "S001" LOC = P21;

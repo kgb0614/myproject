@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-G5TNA0B::  Wed Nov 17 11:43:07 2021
+DESKTOP-G5TNA0B::  Tue Nov 23 11:29:23 2021
 
 par -w -intstyle ise -ol high -mt off Mod4_A_map.ncd Mod4_A.ncd Mod4_A.pcf 
 

@@ -4,3 +4,15 @@ map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off Mod4_A1_map.ncd Mod4_A1.ncd Mod4_A1.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mod4_A1.twx Mod4_A1.ncd -o Mod4_A1.twr Mod4_A1.pcf -ucf Mod4_A1.ucf 
 bitgen -intstyle ise -f Mod4_A1.ut Mod4_A1.ncd 
+xst -intstyle ise -ifn "C:/usr/FPGA3/Mod4_A1/Mod4_A1.xst" -ofn "C:/usr/FPGA3/Mod4_A1/Mod4_A1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mod4_A1.ucf -p xc6slx9-tqg144-3 Mod4_A1.ngc Mod4_A1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mod4_A1_map.ncd Mod4_A1.ngd Mod4_A1.pcf 
+par -w -intstyle ise -ol high -mt off Mod4_A1_map.ncd Mod4_A1.ncd Mod4_A1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mod4_A1.twx Mod4_A1.ncd -o Mod4_A1.twr Mod4_A1.pcf -ucf Mod4_A1.ucf 
+bitgen -intstyle ise -f Mod4_A1.ut Mod4_A1.ncd 
+xst -intstyle ise -ifn "C:/usr/FPGA3/Mod4_A1/Mod4_A1.xst" -ofn "C:/usr/FPGA3/Mod4_A1/Mod4_A1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mod4_A1.ucf -p xc6slx9-tqg144-3 Mod4_A1.ngc Mod4_A1.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mod4_A1_map.ncd Mod4_A1.ngd Mod4_A1.pcf 
+par -w -intstyle ise -ol high -mt off Mod4_A1_map.ncd Mod4_A1.ncd Mod4_A1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mod4_A1.twx Mod4_A1.ncd -o Mod4_A1.twr Mod4_A1.pcf -ucf Mod4_A1.ucf 
+bitgen -intstyle ise -f Mod4_A1.ut Mod4_A1.ncd 

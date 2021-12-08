@@ -1,7 +1,7 @@
 
 # PlanAhead Launch Script for Pre-Synthesis Floorplanning, created by Project Navigator
 
-create_project -name Mod4_A -dir "C:/usr/FPGA3/Mod4_A/planAhead_run_2" -part xc6slx9tqg144-3
+create_project -name Mod4_A -dir "C:/usr/FPGA3/Mod4_A/planAhead_run_4" -part xc6slx9tqg144-3
 set_param project.pinAheadLayout yes
 set srcset [get_property srcset [current_run -impl]]
 set_property target_constrs_file "Mod4_A.ucf" [current_fileset -constrset]

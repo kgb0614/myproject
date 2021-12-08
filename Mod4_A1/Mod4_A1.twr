@@ -36,28 +36,31 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-CK             |ba             |   14.699|
-CK             |bc             |   15.038|
-CK             |bd             |   14.840|
-CK             |be             |   11.123|
-CK             |bf             |   15.239|
-CK             |bg             |   13.306|
-CLR            |ba             |   13.139|
-CLR            |bc             |   13.478|
-CLR            |bd             |   13.280|
-CLR            |be             |    9.563|
-CLR            |bf             |   13.679|
-CLR            |bg             |   11.746|
-SET            |ba             |   14.995|
-SET            |bc             |   15.334|
-SET            |bd             |   15.136|
-SET            |be             |   11.419|
-SET            |bf             |   15.535|
-SET            |bg             |   13.602|
+CK             |ba             |   14.924|
+CK             |bb             |   15.314|
+CK             |bc             |   14.864|
+CK             |bd             |   15.092|
+CK             |be             |   15.098|
+CK             |bf             |   15.033|
+CK             |bg             |   14.250|
+CLR            |ba             |   13.084|
+CLR            |bb             |   13.474|
+CLR            |bc             |   13.024|
+CLR            |bd             |   13.252|
+CLR            |be             |   13.258|
+CLR            |bf             |   13.193|
+CLR            |bg             |   12.410|
+SET            |ba             |   14.695|
+SET            |bb             |   15.085|
+SET            |bc             |   14.635|
+SET            |bd             |   14.863|
+SET            |be             |   14.869|
+SET            |bf             |   14.804|
+SET            |bg             |   14.021|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Nov 24 10:09:12 2021 
+Analysis completed Wed Nov 24 10:43:49 2021 
 --------------------------------------------------------------------------------
 
 Trace Settings:

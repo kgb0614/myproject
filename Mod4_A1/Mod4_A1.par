@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-G5TNA0B::  Wed Nov 24 10:09:02 2021
+DESKTOP-G5TNA0B::  Wed Nov 24 10:43:40 2021
 
 par -w -intstyle ise -ol high -mt off Mod4_A1_map.ncd Mod4_A1.ncd Mod4_A1.pcf 
 
@@ -27,21 +27,21 @@ Device Utilization Summary:
 
 Slice Logic Utilization:
   Number of Slice Registers:                     0 out of  11,440    0%
-  Number of Slice LUTs:                         12 out of   5,720    1%
-    Number used as logic:                       12 out of   5,720    1%
-      Number using O6 output only:              12
+  Number of Slice LUTs:                         19 out of   5,720    1%
+    Number used as logic:                       19 out of   5,720    1%
+      Number using O6 output only:              19
       Number using O5 output only:               0
       Number using O5 and O6:                    0
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                     6 out of   1,430    1%
+  Number of occupied Slices:                    13 out of   1,430    1%
   Number of MUXCYs used:                         0 out of   2,860    0%
-  Number of LUT Flip Flop pairs used:           12
-    Number with an unused Flip Flop:            12 out of      12  100%
-    Number with an unused LUT:                   0 out of      12    0%
-    Number of fully used LUT-FF pairs:           0 out of      12    0%
+  Number of LUT Flip Flop pairs used:           19
+    Number with an unused Flip Flop:            19 out of      19  100%
+    Number with an unused LUT:                   0 out of      19    0%
+    Number of fully used LUT-FF pairs:           0 out of      19    0%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -88,29 +88,29 @@ Finished initial Timing Analysis.  REAL time: 3 secs
 Starting Router
 
 
-Phase  1  : 47 unrouted;      REAL time: 3 secs 
+Phase  1  : 76 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 47 unrouted;      REAL time: 3 secs 
+Phase  2  : 76 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 17 unrouted;      REAL time: 4 secs 
+Phase  3  : 23 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 17 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  4  : 23 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Updating file: Mod4_A1.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
-Total REAL time to Router completion: 4 secs 
-Total CPU time to Router completion: 4 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+Total REAL time to Router completion: 3 secs 
+Total CPU time to Router completion: 3 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -129,7 +129,7 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 5 secs 
+Total REAL time to PAR completion: 4 secs 
 Total CPU time to PAR completion: 4 secs 
 
 Peak Memory Usage:  4455 MB

@@ -1,0 +1,605 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Reading design: OneHz.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "OneHz.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "OneHz"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : OneHz
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\usr\FPGA3\OneHz\JK_FF_NE.vf" into library work
+Parsing module <JK_FF_NE>.
+Analyzing Verilog file "C:\usr\FPGA3\OneHz\Mod5.vf" into library work
+Parsing module <JK_FF_NE_MUSER_Mod5>.
+Parsing module <Mod5>.
+Analyzing Verilog file "C:\usr\FPGA3\OneHz\Mod10.vf" into library work
+Parsing module <JK_FF_NE_MUSER_Mod10>.
+Parsing module <Mod10>.
+Analyzing Verilog file "C:\usr\FPGA3\OneHz\OneHz.vf" into library work
+Parsing module <JK_FF_NE_MUSER_OneHz>.
+Parsing module <Mod10_MUSER_OneHz>.
+Parsing module <Mod5_MUSER_OneHz>.
+Parsing module <OneHz>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <OneHz>.
+
+Elaborating module <Mod5_MUSER_OneHz>.
+
+Elaborating module <JK_FF_NE_MUSER_OneHz>.
+
+Elaborating module <NAND2>.
+
+Elaborating module <NAND3>.
+
+Elaborating module <INV>.
+
+Elaborating module <AND2>.
+
+Elaborating module <VCC>.
+
+Elaborating module <Mod10_MUSER_OneHz>.
+
+Elaborating module <AND3>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <OneHz>.
+    Related source file is "C:\usr\FPGA3\OneHz\OneHz.vf".
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 240: Output port <QA> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 240: Output port <QB> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 246: Output port <QA> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 246: Output port <QB> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 246: Output port <QC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 253: Output port <QA> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 253: Output port <QB> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 253: Output port <QC> of the instance <XLXI_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 260: Output port <QA> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 260: Output port <QB> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 260: Output port <QC> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 267: Output port <QA> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 267: Output port <QB> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 267: Output port <QC> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 274: Output port <QA> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 274: Output port <QB> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 274: Output port <QC> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 281: Output port <QA> of the instance <XLXI_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 281: Output port <QB> of the instance <XLXI_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 281: Output port <QC> of the instance <XLXI_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 288: Output port <QA> of the instance <XLXI_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 288: Output port <QB> of the instance <XLXI_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 288: Output port <QC> of the instance <XLXI_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 295: Output port <QA> of the instance <XLXI_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 295: Output port <QB> of the instance <XLXI_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 295: Output port <QC> of the instance <XLXI_12> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <OneHz> synthesized.
+
+Synthesizing Unit <Mod5_MUSER_OneHz>.
+    Related source file is "C:\usr\FPGA3\OneHz\OneHz.vf".
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 184: Output port <bQ> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 191: Output port <bQ> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Mod5_MUSER_OneHz> synthesized.
+
+Synthesizing Unit <JK_FF_NE_MUSER_OneHz>.
+    Related source file is "C:\usr\FPGA3\OneHz\OneHz.vf".
+    Summary:
+	no macro.
+Unit <JK_FF_NE_MUSER_OneHz> synthesized.
+
+Synthesizing Unit <Mod10_MUSER_OneHz>.
+    Related source file is "C:\usr\FPGA3\OneHz\OneHz.vf".
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 120: Output port <bQ> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 127: Output port <bQ> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\OneHz\OneHz.vf" line 134: Output port <bQ> of the instance <XLXI_3> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Mod10_MUSER_OneHz> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit JK_FF_NE_MUSER_OneHz : the following signal(s) form a combinatorial loop: XLXN_24, XLXN_21, XLXN_28, bQ_DUMMY, Q_DUMMY.
+
+Optimizing unit <OneHz> ...
+
+Optimizing unit <JK_FF_NE_MUSER_OneHz> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block OneHz, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : OneHz.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 131
+#      AND2                        : 17
+#      AND3                        : 8
+#      INV                         : 105
+#      VCC                         : 1
+# IO Buffers                       : 7
+#      IBUF                        : 3
+#      OBUF                        : 4
+# Logical                          : 280
+#      NAND2                       : 70
+#      NAND3                       : 210
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  105  out of   5720     1%  
+    Number used as Logic:               105  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    105
+   Number with an unused Flip Flop:     105  out of    105   100%  
+   Number with an unused LUT:             0  out of    105     0%  
+   Number of fully used LUT-FF pairs:     0  out of    105     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           7
+ Number of bonded IOBs:                   7  out of    102     6%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 285.533ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 611928747774129730000 / 4
+-------------------------------------------------------------------------
+Delay:               285.533ns (Levels of Logic = 237)
+  Source:            SET (PAD)
+  Destination:       S10 (PAD)
+
+  Data Path: SET to S10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            35   1.222   1.334  SET_IBUF (SET_IBUF)
+     INV:I->O              2   0.568   0.864  XLXI_1/XLXI_1/XLXI_15 (XLXI_1/XLXI_1/XLXN_52)
+     NAND3:I2->O           2   0.320   0.864  XLXI_1/XLXI_1/XLXI_11 (XLXI_1/XLXI_1/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_1/XLXI_1/XLXI_10 (XLXI_1/XLXI_1/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_1/XLXI_1/XLXI_5 (XLXI_1/XLXI_1/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_1/XLXI_1/XLXI_13 (XLXI_1/XLXI_1/bQ_DUMMY)
+     NAND3:I0->O           5   0.203   1.059  XLXI_1/XLXI_1/XLXI_12 (XLXI_1/QA_DUMMY)
+     NAND3:I1->O           1   0.223   0.924  XLXI_1/XLXI_2/XLXI_7 (XLXI_1/XLXI_2/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_1/XLXI_2/XLXI_11 (XLXI_1/XLXI_2/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_1/XLXI_2/XLXI_10 (XLXI_1/XLXI_2/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_1/XLXI_2/XLXI_5 (XLXI_1/XLXI_2/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_1/XLXI_2/XLXI_13 (XLXI_1/XLXI_2/bQ_DUMMY)
+     NAND3:I0->O           3   0.203   0.995  XLXI_1/XLXI_2/XLXI_12 (XLXI_1/QB_DUMMY)
+     AND2:I1->O            1   0.223   0.924  XLXI_1/XLXI_4 (XLXI_1/XLXN_16)
+     NAND3:I1->O           1   0.223   0.924  XLXI_1/XLXI_3/XLXI_7 (XLXI_1/XLXI_3/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_1/XLXI_3/XLXI_11 (XLXI_1/XLXI_3/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_1/XLXI_3/XLXI_10 (XLXI_1/XLXI_3/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_1/XLXI_3/XLXI_5 (XLXI_1/XLXI_3/XLXN_28)
+     NAND3:I1->O           3   0.223   1.015  XLXI_1/XLXI_3/XLXI_13 (XLXI_1/XLXN_20)
+     NAND3:I0->O          14   0.203   1.322  XLXI_1/XLXI_3/XLXI_12 (XLXN_34)
+     NAND3:I0->O           1   0.203   0.924  XLXI_7/XLXI_1/XLXI_7 (XLXI_7/XLXI_1/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_7/XLXI_1/XLXI_11 (XLXI_7/XLXI_1/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_7/XLXI_1/XLXI_10 (XLXI_7/XLXI_1/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_7/XLXI_1/XLXI_5 (XLXI_7/XLXI_1/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_7/XLXI_1/XLXI_13 (XLXI_7/XLXI_1/bQ_DUMMY)
+     NAND3:I0->O           7   0.203   1.118  XLXI_7/XLXI_1/XLXI_12 (XLXI_7/QA_DUMMY)
+     AND2:I1->O            1   0.223   0.924  XLXI_7/XLXI_6 (XLXI_7/XLXN_29)
+     NAND3:I1->O           1   0.223   0.924  XLXI_7/XLXI_2/XLXI_7 (XLXI_7/XLXI_2/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_7/XLXI_2/XLXI_11 (XLXI_7/XLXI_2/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_7/XLXI_2/XLXI_10 (XLXI_7/XLXI_2/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_7/XLXI_2/XLXI_5 (XLXI_7/XLXI_2/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_7/XLXI_2/XLXI_13 (XLXI_7/XLXI_2/bQ_DUMMY)
+     NAND3:I0->O           4   0.203   1.048  XLXI_7/XLXI_2/XLXI_12 (XLXI_7/QB_DUMMY)
+     AND2:I0->O            2   0.203   0.961  XLXI_7/XLXI_7 (XLXI_7/XLXN_32)
+     NAND3:I1->O           1   0.223   0.924  XLXI_7/XLXI_3/XLXI_7 (XLXI_7/XLXI_3/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_7/XLXI_3/XLXI_11 (XLXI_7/XLXI_3/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_7/XLXI_3/XLXI_10 (XLXI_7/XLXI_3/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_7/XLXI_3/XLXI_5 (XLXI_7/XLXI_3/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_7/XLXI_3/XLXI_13 (XLXI_7/XLXI_3/bQ_DUMMY)
+     NAND3:I0->O           3   0.203   1.015  XLXI_7/XLXI_3/XLXI_12 (XLXI_7/QC_DUMMY)
+     AND3:I0->O            1   0.203   0.924  XLXI_7/XLXI_5 (XLXI_7/XLXN_24)
+     NAND3:I1->O           1   0.223   0.924  XLXI_7/XLXI_4/XLXI_7 (XLXI_7/XLXI_4/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_7/XLXI_4/XLXI_11 (XLXI_7/XLXI_4/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_7/XLXI_4/XLXI_10 (XLXI_7/XLXI_4/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_7/XLXI_4/XLXI_5 (XLXI_7/XLXI_4/XLXN_28)
+     NAND3:I1->O           3   0.223   1.015  XLXI_7/XLXI_4/XLXI_13 (XLXI_7/XLXN_25)
+     NAND3:I0->O          14   0.203   1.322  XLXI_7/XLXI_4/XLXI_12 (XLXN_27)
+     NAND3:I0->O           1   0.203   0.924  XLXI_6/XLXI_1/XLXI_7 (XLXI_6/XLXI_1/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_6/XLXI_1/XLXI_11 (XLXI_6/XLXI_1/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_6/XLXI_1/XLXI_10 (XLXI_6/XLXI_1/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_6/XLXI_1/XLXI_5 (XLXI_6/XLXI_1/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_6/XLXI_1/XLXI_13 (XLXI_6/XLXI_1/bQ_DUMMY)
+     NAND3:I0->O           7   0.203   1.118  XLXI_6/XLXI_1/XLXI_12 (XLXI_6/QA_DUMMY)
+     AND2:I1->O            1   0.223   0.924  XLXI_6/XLXI_6 (XLXI_6/XLXN_29)
+     NAND3:I1->O           1   0.223   0.924  XLXI_6/XLXI_2/XLXI_7 (XLXI_6/XLXI_2/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_6/XLXI_2/XLXI_11 (XLXI_6/XLXI_2/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_6/XLXI_2/XLXI_10 (XLXI_6/XLXI_2/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_6/XLXI_2/XLXI_5 (XLXI_6/XLXI_2/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_6/XLXI_2/XLXI_13 (XLXI_6/XLXI_2/bQ_DUMMY)
+     NAND3:I0->O           4   0.203   1.048  XLXI_6/XLXI_2/XLXI_12 (XLXI_6/QB_DUMMY)
+     AND2:I0->O            2   0.203   0.961  XLXI_6/XLXI_7 (XLXI_6/XLXN_32)
+     NAND3:I1->O           1   0.223   0.924  XLXI_6/XLXI_3/XLXI_7 (XLXI_6/XLXI_3/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_6/XLXI_3/XLXI_11 (XLXI_6/XLXI_3/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_6/XLXI_3/XLXI_10 (XLXI_6/XLXI_3/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_6/XLXI_3/XLXI_5 (XLXI_6/XLXI_3/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_6/XLXI_3/XLXI_13 (XLXI_6/XLXI_3/bQ_DUMMY)
+     NAND3:I0->O           3   0.203   1.015  XLXI_6/XLXI_3/XLXI_12 (XLXI_6/QC_DUMMY)
+     AND3:I0->O            1   0.203   0.924  XLXI_6/XLXI_5 (XLXI_6/XLXN_24)
+     NAND3:I1->O           1   0.223   0.924  XLXI_6/XLXI_4/XLXI_7 (XLXI_6/XLXI_4/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_6/XLXI_4/XLXI_11 (XLXI_6/XLXI_4/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_6/XLXI_4/XLXI_10 (XLXI_6/XLXI_4/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_6/XLXI_4/XLXI_5 (XLXI_6/XLXI_4/XLXN_28)
+     NAND3:I1->O           3   0.223   1.015  XLXI_6/XLXI_4/XLXI_13 (XLXI_6/XLXN_25)
+     NAND3:I0->O          14   0.203   1.322  XLXI_6/XLXI_4/XLXI_12 (XLXN_26)
+     NAND3:I0->O           1   0.203   0.924  XLXI_5/XLXI_1/XLXI_7 (XLXI_5/XLXI_1/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_5/XLXI_1/XLXI_11 (XLXI_5/XLXI_1/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_5/XLXI_1/XLXI_10 (XLXI_5/XLXI_1/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_5/XLXI_1/XLXI_5 (XLXI_5/XLXI_1/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_5/XLXI_1/XLXI_13 (XLXI_5/XLXI_1/bQ_DUMMY)
+     NAND3:I0->O           7   0.203   1.118  XLXI_5/XLXI_1/XLXI_12 (XLXI_5/QA_DUMMY)
+     AND2:I1->O            1   0.223   0.924  XLXI_5/XLXI_6 (XLXI_5/XLXN_29)
+     NAND3:I1->O           1   0.223   0.924  XLXI_5/XLXI_2/XLXI_7 (XLXI_5/XLXI_2/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_5/XLXI_2/XLXI_11 (XLXI_5/XLXI_2/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_5/XLXI_2/XLXI_10 (XLXI_5/XLXI_2/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_5/XLXI_2/XLXI_5 (XLXI_5/XLXI_2/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_5/XLXI_2/XLXI_13 (XLXI_5/XLXI_2/bQ_DUMMY)
+     NAND3:I0->O           4   0.203   1.048  XLXI_5/XLXI_2/XLXI_12 (XLXI_5/QB_DUMMY)
+     AND2:I0->O            2   0.203   0.961  XLXI_5/XLXI_7 (XLXI_5/XLXN_32)
+     NAND3:I1->O           1   0.223   0.924  XLXI_5/XLXI_3/XLXI_7 (XLXI_5/XLXI_3/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_5/XLXI_3/XLXI_11 (XLXI_5/XLXI_3/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_5/XLXI_3/XLXI_10 (XLXI_5/XLXI_3/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_5/XLXI_3/XLXI_5 (XLXI_5/XLXI_3/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_5/XLXI_3/XLXI_13 (XLXI_5/XLXI_3/bQ_DUMMY)
+     NAND3:I0->O           3   0.203   1.015  XLXI_5/XLXI_3/XLXI_12 (XLXI_5/QC_DUMMY)
+     AND3:I0->O            1   0.203   0.924  XLXI_5/XLXI_5 (XLXI_5/XLXN_24)
+     NAND3:I1->O           1   0.223   0.924  XLXI_5/XLXI_4/XLXI_7 (XLXI_5/XLXI_4/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_5/XLXI_4/XLXI_11 (XLXI_5/XLXI_4/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_5/XLXI_4/XLXI_10 (XLXI_5/XLXI_4/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_5/XLXI_4/XLXI_5 (XLXI_5/XLXI_4/XLXN_28)
+     NAND3:I1->O           3   0.223   1.015  XLXI_5/XLXI_4/XLXI_13 (XLXI_5/XLXN_25)
+     NAND3:I0->O          14   0.203   1.322  XLXI_5/XLXI_4/XLXI_12 (XLXN_25)
+     NAND3:I0->O           1   0.203   0.924  XLXI_2/XLXI_1/XLXI_7 (XLXI_2/XLXI_1/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_2/XLXI_1/XLXI_11 (XLXI_2/XLXI_1/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_2/XLXI_1/XLXI_10 (XLXI_2/XLXI_1/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_2/XLXI_1/XLXI_5 (XLXI_2/XLXI_1/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_2/XLXI_1/XLXI_13 (XLXI_2/XLXI_1/bQ_DUMMY)
+     NAND3:I0->O           7   0.203   1.118  XLXI_2/XLXI_1/XLXI_12 (XLXI_2/QA_DUMMY)
+     AND2:I1->O            1   0.223   0.924  XLXI_2/XLXI_6 (XLXI_2/XLXN_29)
+     NAND3:I1->O           1   0.223   0.924  XLXI_2/XLXI_2/XLXI_7 (XLXI_2/XLXI_2/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_2/XLXI_2/XLXI_11 (XLXI_2/XLXI_2/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_2/XLXI_2/XLXI_10 (XLXI_2/XLXI_2/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_2/XLXI_2/XLXI_5 (XLXI_2/XLXI_2/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_2/XLXI_2/XLXI_13 (XLXI_2/XLXI_2/bQ_DUMMY)
+     NAND3:I0->O           4   0.203   1.048  XLXI_2/XLXI_2/XLXI_12 (XLXI_2/QB_DUMMY)
+     AND2:I0->O            2   0.203   0.961  XLXI_2/XLXI_7 (XLXI_2/XLXN_32)
+     NAND3:I1->O           1   0.223   0.924  XLXI_2/XLXI_3/XLXI_7 (XLXI_2/XLXI_3/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_2/XLXI_3/XLXI_11 (XLXI_2/XLXI_3/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_2/XLXI_3/XLXI_10 (XLXI_2/XLXI_3/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_2/XLXI_3/XLXI_5 (XLXI_2/XLXI_3/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_2/XLXI_3/XLXI_13 (XLXI_2/XLXI_3/bQ_DUMMY)
+     NAND3:I0->O           3   0.203   1.015  XLXI_2/XLXI_3/XLXI_12 (XLXI_2/QC_DUMMY)
+     AND3:I0->O            1   0.203   0.924  XLXI_2/XLXI_5 (XLXI_2/XLXN_24)
+     NAND3:I1->O           1   0.223   0.924  XLXI_2/XLXI_4/XLXI_7 (XLXI_2/XLXI_4/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_2/XLXI_4/XLXI_11 (XLXI_2/XLXI_4/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_2/XLXI_4/XLXI_10 (XLXI_2/XLXI_4/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_2/XLXI_4/XLXI_5 (XLXI_2/XLXI_4/XLXN_28)
+     NAND3:I1->O           3   0.223   1.015  XLXI_2/XLXI_4/XLXI_13 (XLXI_2/XLXN_25)
+     NAND3:I0->O          14   0.203   1.322  XLXI_2/XLXI_4/XLXI_12 (XLXN_37)
+     NAND3:I0->O           1   0.203   0.924  XLXI_8/XLXI_1/XLXI_7 (XLXI_8/XLXI_1/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_8/XLXI_1/XLXI_11 (XLXI_8/XLXI_1/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_8/XLXI_1/XLXI_10 (XLXI_8/XLXI_1/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_8/XLXI_1/XLXI_5 (XLXI_8/XLXI_1/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_8/XLXI_1/XLXI_13 (XLXI_8/XLXI_1/bQ_DUMMY)
+     NAND3:I0->O           7   0.203   1.118  XLXI_8/XLXI_1/XLXI_12 (XLXI_8/QA_DUMMY)
+     AND2:I1->O            1   0.223   0.924  XLXI_8/XLXI_6 (XLXI_8/XLXN_29)
+     NAND3:I1->O           1   0.223   0.924  XLXI_8/XLXI_2/XLXI_7 (XLXI_8/XLXI_2/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_8/XLXI_2/XLXI_11 (XLXI_8/XLXI_2/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_8/XLXI_2/XLXI_10 (XLXI_8/XLXI_2/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_8/XLXI_2/XLXI_5 (XLXI_8/XLXI_2/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_8/XLXI_2/XLXI_13 (XLXI_8/XLXI_2/bQ_DUMMY)
+     NAND3:I0->O           4   0.203   1.048  XLXI_8/XLXI_2/XLXI_12 (XLXI_8/QB_DUMMY)
+     AND2:I0->O            2   0.203   0.961  XLXI_8/XLXI_7 (XLXI_8/XLXN_32)
+     NAND3:I1->O           1   0.223   0.924  XLXI_8/XLXI_3/XLXI_7 (XLXI_8/XLXI_3/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_8/XLXI_3/XLXI_11 (XLXI_8/XLXI_3/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_8/XLXI_3/XLXI_10 (XLXI_8/XLXI_3/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_8/XLXI_3/XLXI_5 (XLXI_8/XLXI_3/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_8/XLXI_3/XLXI_13 (XLXI_8/XLXI_3/bQ_DUMMY)
+     NAND3:I0->O           3   0.203   1.015  XLXI_8/XLXI_3/XLXI_12 (XLXI_8/QC_DUMMY)
+     AND3:I0->O            1   0.203   0.924  XLXI_8/XLXI_5 (XLXI_8/XLXN_24)
+     NAND3:I1->O           1   0.223   0.924  XLXI_8/XLXI_4/XLXI_7 (XLXI_8/XLXI_4/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_8/XLXI_4/XLXI_11 (XLXI_8/XLXI_4/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_8/XLXI_4/XLXI_10 (XLXI_8/XLXI_4/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_8/XLXI_4/XLXI_5 (XLXI_8/XLXI_4/XLXN_28)
+     NAND3:I1->O           3   0.223   1.015  XLXI_8/XLXI_4/XLXI_13 (XLXI_8/XLXN_25)
+     NAND3:I0->O          15   0.203   1.346  XLXI_8/XLXI_4/XLXI_12 (S001_OBUF)
+     NAND3:I0->O           1   0.203   0.924  XLXI_9/XLXI_1/XLXI_7 (XLXI_9/XLXI_1/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_9/XLXI_1/XLXI_11 (XLXI_9/XLXI_1/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_9/XLXI_1/XLXI_10 (XLXI_9/XLXI_1/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_9/XLXI_1/XLXI_5 (XLXI_9/XLXI_1/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_9/XLXI_1/XLXI_13 (XLXI_9/XLXI_1/bQ_DUMMY)
+     NAND3:I0->O           7   0.203   1.118  XLXI_9/XLXI_1/XLXI_12 (XLXI_9/QA_DUMMY)
+     AND2:I1->O            1   0.223   0.924  XLXI_9/XLXI_6 (XLXI_9/XLXN_29)
+     NAND3:I1->O           1   0.223   0.924  XLXI_9/XLXI_2/XLXI_7 (XLXI_9/XLXI_2/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_9/XLXI_2/XLXI_11 (XLXI_9/XLXI_2/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_9/XLXI_2/XLXI_10 (XLXI_9/XLXI_2/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_9/XLXI_2/XLXI_5 (XLXI_9/XLXI_2/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_9/XLXI_2/XLXI_13 (XLXI_9/XLXI_2/bQ_DUMMY)
+     NAND3:I0->O           4   0.203   1.048  XLXI_9/XLXI_2/XLXI_12 (XLXI_9/QB_DUMMY)
+     AND2:I0->O            2   0.203   0.961  XLXI_9/XLXI_7 (XLXI_9/XLXN_32)
+     NAND3:I1->O           1   0.223   0.924  XLXI_9/XLXI_3/XLXI_7 (XLXI_9/XLXI_3/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_9/XLXI_3/XLXI_11 (XLXI_9/XLXI_3/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_9/XLXI_3/XLXI_10 (XLXI_9/XLXI_3/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_9/XLXI_3/XLXI_5 (XLXI_9/XLXI_3/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_9/XLXI_3/XLXI_13 (XLXI_9/XLXI_3/bQ_DUMMY)
+     NAND3:I0->O           3   0.203   1.015  XLXI_9/XLXI_3/XLXI_12 (XLXI_9/QC_DUMMY)
+     AND3:I0->O            1   0.203   0.924  XLXI_9/XLXI_5 (XLXI_9/XLXN_24)
+     NAND3:I1->O           1   0.223   0.924  XLXI_9/XLXI_4/XLXI_7 (XLXI_9/XLXI_4/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_9/XLXI_4/XLXI_11 (XLXI_9/XLXI_4/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_9/XLXI_4/XLXI_10 (XLXI_9/XLXI_4/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_9/XLXI_4/XLXI_5 (XLXI_9/XLXI_4/XLXN_28)
+     NAND3:I1->O           3   0.223   1.015  XLXI_9/XLXI_4/XLXI_13 (XLXI_9/XLXN_25)
+     NAND3:I0->O          15   0.203   1.346  XLXI_9/XLXI_4/XLXI_12 (S01_OBUF)
+     NAND3:I0->O           1   0.203   0.924  XLXI_11/XLXI_1/XLXI_7 (XLXI_11/XLXI_1/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_11/XLXI_1/XLXI_11 (XLXI_11/XLXI_1/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_11/XLXI_1/XLXI_10 (XLXI_11/XLXI_1/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_11/XLXI_1/XLXI_5 (XLXI_11/XLXI_1/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_11/XLXI_1/XLXI_13 (XLXI_11/XLXI_1/bQ_DUMMY)
+     NAND3:I0->O           7   0.203   1.118  XLXI_11/XLXI_1/XLXI_12 (XLXI_11/QA_DUMMY)
+     AND2:I1->O            1   0.223   0.924  XLXI_11/XLXI_6 (XLXI_11/XLXN_29)
+     NAND3:I1->O           1   0.223   0.924  XLXI_11/XLXI_2/XLXI_7 (XLXI_11/XLXI_2/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_11/XLXI_2/XLXI_11 (XLXI_11/XLXI_2/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_11/XLXI_2/XLXI_10 (XLXI_11/XLXI_2/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_11/XLXI_2/XLXI_5 (XLXI_11/XLXI_2/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_11/XLXI_2/XLXI_13 (XLXI_11/XLXI_2/bQ_DUMMY)
+     NAND3:I0->O           4   0.203   1.048  XLXI_11/XLXI_2/XLXI_12 (XLXI_11/QB_DUMMY)
+     AND2:I0->O            2   0.203   0.961  XLXI_11/XLXI_7 (XLXI_11/XLXN_32)
+     NAND3:I1->O           1   0.223   0.924  XLXI_11/XLXI_3/XLXI_7 (XLXI_11/XLXI_3/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_11/XLXI_3/XLXI_11 (XLXI_11/XLXI_3/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_11/XLXI_3/XLXI_10 (XLXI_11/XLXI_3/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_11/XLXI_3/XLXI_5 (XLXI_11/XLXI_3/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_11/XLXI_3/XLXI_13 (XLXI_11/XLXI_3/bQ_DUMMY)
+     NAND3:I0->O           3   0.203   1.015  XLXI_11/XLXI_3/XLXI_12 (XLXI_11/QC_DUMMY)
+     AND3:I0->O            1   0.203   0.924  XLXI_11/XLXI_5 (XLXI_11/XLXN_24)
+     NAND3:I1->O           1   0.223   0.924  XLXI_11/XLXI_4/XLXI_7 (XLXI_11/XLXI_4/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_11/XLXI_4/XLXI_11 (XLXI_11/XLXI_4/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_11/XLXI_4/XLXI_10 (XLXI_11/XLXI_4/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_11/XLXI_4/XLXI_5 (XLXI_11/XLXI_4/XLXN_28)
+     NAND3:I1->O           3   0.223   1.015  XLXI_11/XLXI_4/XLXI_13 (XLXI_11/XLXN_25)
+     NAND3:I0->O          15   0.203   1.346  XLXI_11/XLXI_4/XLXI_12 (S1_OBUF)
+     NAND3:I0->O           1   0.203   0.924  XLXI_12/XLXI_1/XLXI_7 (XLXI_12/XLXI_1/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_12/XLXI_1/XLXI_11 (XLXI_12/XLXI_1/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_12/XLXI_1/XLXI_10 (XLXI_12/XLXI_1/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_12/XLXI_1/XLXI_5 (XLXI_12/XLXI_1/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_12/XLXI_1/XLXI_13 (XLXI_12/XLXI_1/bQ_DUMMY)
+     NAND3:I0->O           7   0.203   1.118  XLXI_12/XLXI_1/XLXI_12 (XLXI_12/QA_DUMMY)
+     AND2:I1->O            1   0.223   0.924  XLXI_12/XLXI_6 (XLXI_12/XLXN_29)
+     NAND3:I1->O           1   0.223   0.924  XLXI_12/XLXI_2/XLXI_7 (XLXI_12/XLXI_2/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_12/XLXI_2/XLXI_11 (XLXI_12/XLXI_2/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_12/XLXI_2/XLXI_10 (XLXI_12/XLXI_2/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_12/XLXI_2/XLXI_5 (XLXI_12/XLXI_2/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_12/XLXI_2/XLXI_13 (XLXI_12/XLXI_2/bQ_DUMMY)
+     NAND3:I0->O           4   0.203   1.048  XLXI_12/XLXI_2/XLXI_12 (XLXI_12/QB_DUMMY)
+     AND2:I0->O            2   0.203   0.961  XLXI_12/XLXI_7 (XLXI_12/XLXN_32)
+     NAND3:I1->O           1   0.223   0.924  XLXI_12/XLXI_3/XLXI_7 (XLXI_12/XLXI_3/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_12/XLXI_3/XLXI_11 (XLXI_12/XLXI_3/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_12/XLXI_3/XLXI_10 (XLXI_12/XLXI_3/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_12/XLXI_3/XLXI_5 (XLXI_12/XLXI_3/XLXN_28)
+     NAND3:I1->O           2   0.223   0.981  XLXI_12/XLXI_3/XLXI_13 (XLXI_12/XLXI_3/bQ_DUMMY)
+     NAND3:I0->O           3   0.203   1.015  XLXI_12/XLXI_3/XLXI_12 (XLXI_12/QC_DUMMY)
+     AND3:I0->O            1   0.203   0.924  XLXI_12/XLXI_5 (XLXI_12/XLXN_24)
+     NAND3:I1->O           1   0.223   0.924  XLXI_12/XLXI_4/XLXI_7 (XLXI_12/XLXI_4/XLXN_22)
+     NAND3:I1->O           2   0.223   0.864  XLXI_12/XLXI_4/XLXI_11 (XLXI_12/XLXI_4/XLXN_23)
+     NAND3:I2->O           2   0.320   0.981  XLXI_12/XLXI_4/XLXI_10 (XLXI_12/XLXI_4/XLXN_21)
+     NAND2:I0->O           1   0.203   0.924  XLXI_12/XLXI_4/XLXI_5 (XLXI_12/XLXI_4/XLXN_28)
+     NAND3:I1->O           3   0.223   1.015  XLXI_12/XLXI_4/XLXI_13 (XLXI_12/XLXN_25)
+     NAND3:I0->O           3   0.203   0.650  XLXI_12/XLXI_4/XLXI_12 (S10_OBUF)
+     OBUF:I->O                 2.571          S10_OBUF (S10)
+    ----------------------------------------
+    Total                    285.533ns (58.156ns logic, 227.377ns route)
+                                       (20.4% logic, 79.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.64 secs
+ 
+--> 
+
+Total memory usage is 4485808 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :   31 (   0 filtered)
+

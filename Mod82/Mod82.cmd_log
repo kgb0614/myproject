@@ -1,0 +1,7 @@
+sch2sym -intstyle ise -family spartan6 -refsym Mod82 C:/usr/FPGA3/Mod82/Mod82.sch C:/usr/FPGA3/Mod82/Mod82.sym 
+xst -intstyle ise -ifn "C:/usr/FPGA3/Mod82/Mod82.xst" -ofn "C:/usr/FPGA3/Mod82/Mod82.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Mod82.ucf -p xc6slx9-tqg144-3 Mod82.ngc Mod82.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Mod82_map.ncd Mod82.ngd Mod82.pcf 
+par -w -intstyle ise -ol high -mt off Mod82_map.ncd Mod82.ncd Mod82.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Mod82.twx Mod82.ncd -o Mod82.twr Mod82.pcf -ucf Mod82.ucf 
+bitgen -intstyle ise -f Mod82.ut Mod82.ncd 

@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Dec 01 14:12:41 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CK" LOCATE = SITE "P74" LEVEL 1;
+COMP "SET" LOCATE = SITE "P79" LEVEL 1;
+COMP "ba" LOCATE = SITE "P102" LEVEL 1;
+COMP "bb" LOCATE = SITE "P101" LEVEL 1;
+COMP "bc" LOCATE = SITE "P100" LEVEL 1;
+COMP "bd" LOCATE = SITE "P99" LEVEL 1;
+COMP "be" LOCATE = SITE "P98" LEVEL 1;
+COMP "bf" LOCATE = SITE "P97" LEVEL 1;
+COMP "bg" LOCATE = SITE "P95" LEVEL 1;
+COMP "CLR" LOCATE = SITE "P75" LEVEL 1;
+SCHEMATIC END;
+

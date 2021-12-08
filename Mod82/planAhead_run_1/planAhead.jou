@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Dec 01 14:10:25 2021
+# Process ID: 11452
+# Log file: C:/usr/FPGA3/Mod82/planAhead_run_1/planAhead.log
+# Journal file: C:/usr/FPGA3/Mod82/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/usr/FPGA3/Mod82/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P70 [get_ports CK]
+endgroup
+set_property package_pin "" [get_ports [list  SET]]
+startgroup
+set_property package_pin P74 [get_ports CK]
+endgroup
+startgroup
+set_property package_pin P75 [get_ports CLR]
+endgroup
+startgroup
+set_property package_pin P79 [get_ports SET]
+endgroup
+startgroup
+set_property package_pin P102 [get_ports ba]
+endgroup
+set_property package_pin "" [get_ports [list  bb]]
+startgroup
+set_property package_pin P100 [get_ports bc]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports bb]
+endgroup
+startgroup
+set_property package_pin P99 [get_ports bd]
+endgroup
+startgroup
+set_property package_pin P97 [get_ports be]
+endgroup
+set_property package_pin "" [get_ports [list  bf]]
+set_property is_loc_fixed false [get_ports [list  bb]]
+startgroup
+set_property package_pin P98 [get_ports be]
+endgroup
+startgroup
+set_property package_pin P97 [get_ports bf]
+endgroup
+startgroup
+set_property package_pin P95 [get_ports bg]
+endgroup
+set_property is_loc_fixed true [get_ports [list  bb]]
+startgroup
+set_property package_pin P101 [get_ports bb]
+endgroup
+save_constraints

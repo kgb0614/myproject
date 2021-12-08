@@ -5,13 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf</arg>&quot; line <arg fmt="%s" index="2">541</arg>: Output port &lt;<arg fmt="%s" index="3">bQ</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf</arg>&quot; line <arg fmt="%s" index="2">571</arg>: Output port &lt;<arg fmt="%s" index="3">bQ</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_6</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\usr\FPGA3\Mod4_A1\Mod4_A1.vf</arg>&quot; line <arg fmt="%s" index="2">548</arg>: Output port &lt;<arg fmt="%s" index="3">bQ</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="warning" file="Xst" num="2170" delta="new" >Unit <arg fmt="%s" index="1">JK_FF_NE_MUSER_Mod4_A1</arg> : the following signal(s) form a combinatorial loop: </msg>
+<msg type="warning" file="Xst" num="2170" delta="old" >Unit <arg fmt="%s" index="1">JK_FF_NE_MUSER_Mod4_A1</arg> : the following signal(s) form a combinatorial loop: </msg>
 
 </messages>
 

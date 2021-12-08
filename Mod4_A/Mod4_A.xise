@@ -68,7 +68,7 @@
     <property xil_pn:name="Implementation Top File" xil_pn:value="Mod4_A.sch" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/Mod4_A" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Overwrite Existing Symbol" xil_pn:value="true" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Package" xil_pn:value="tqg144" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Package" xil_pn:value="tqg144" xil_pn:valueState="default"/>
     <property xil_pn:name="Preferred Language" xil_pn:value="Verilog" xil_pn:valueState="default"/>
     <property xil_pn:name="Property Specification in Project File" xil_pn:value="Store non-default values only" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Simulator" xil_pn:value="Modelsim-SE Mixed" xil_pn:valueState="non-default"/>

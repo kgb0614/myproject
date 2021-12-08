@@ -131,6 +131,7 @@ Parsing module <fnd2_MUSER_fnd0>.
 Parsing module <fnd1_MUSER_fnd0>.
 Parsing module <fnd0>.
 Analyzing Verilog file "C:\usr\FPGA3\Mod4_A\Mod4_A.vf" into library work
+Parsing module <JK_FF_NE_MUSER_Mod4_A>.
 Parsing module <fnd7_MUSER_Mod4_A>.
 Parsing module <fnd6_MUSER_Mod4_A>.
 Parsing module <fnd5_MUSER_Mod4_A>.
@@ -139,7 +140,6 @@ Parsing module <fnd3_MUSER_Mod4_A>.
 Parsing module <fnd2_MUSER_Mod4_A>.
 Parsing module <fnd1_MUSER_Mod4_A>.
 Parsing module <fnd0_MUSER_Mod4_A>.
-Parsing module <JK_FF_NE_MUSER_Mod4_A>.
 Parsing module <Mod4_A>.
 
 =========================================================================
@@ -192,8 +192,7 @@ Elaborating module <VCC>.
 
 Synthesizing Unit <Mod4_A>.
     Related source file is "C:\usr\FPGA3\Mod4_A\Mod4_A.vf".
-INFO:Xst:3210 - "C:\usr\FPGA3\Mod4_A\Mod4_A.vf" line 547: Output port <bQ> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\usr\FPGA3\Mod4_A\Mod4_A.vf" line 554: Output port <bQ> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\usr\FPGA3\Mod4_A\Mod4_A.vf" line 571: Output port <bQ> of the instance <XLXI_9> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Mod4_A> synthesized.
@@ -272,7 +271,7 @@ Found no macro
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2170 - Unit JK_FF_NE_MUSER_Mod4_A : the following signal(s) form a combinatorial loop: Q_DUMMY, XLXN_7, XLXN_4, XLXN_5, bQ_DUMMY.
+WARNING:Xst:2170 - Unit JK_FF_NE_MUSER_Mod4_A : the following signal(s) form a combinatorial loop: bQ_DUMMY, XLXN_7, Q_DUMMY, XLXN_4, XLXN_5.
 
 Optimizing unit <Mod4_A> ...
 
@@ -309,21 +308,21 @@ Top Level Output File Name         : Mod4_A.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 68
+# BELS                             : 71
 #      AND2                        : 1
 #      AND3                        : 13
 #      AND4                        : 11
 #      GND                         : 1
-#      INV                         : 34
+#      INV                         : 37
 #      OR3                         : 3
 #      OR4                         : 4
 #      VCC                         : 1
-# IO Buffers                       : 12
+# IO Buffers                       : 10
 #      IBUF                        : 3
-#      OBUF                        : 9
-# Logical                          : 16
-#      NAND2                       : 4
-#      NAND3                       : 12
+#      OBUF                        : 7
+# Logical                          : 24
+#      NAND2                       : 6
+#      NAND3                       : 18
 
 Device utilization summary:
 ---------------------------
@@ -332,19 +331,19 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   34  out of   5720     0%  
-    Number used as Logic:                34  out of   5720     0%  
+ Number of Slice LUTs:                   37  out of   5720     0%  
+    Number used as Logic:                37  out of   5720     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     34
-   Number with an unused Flip Flop:      34  out of     34   100%  
-   Number with an unused LUT:             0  out of     34     0%  
-   Number of fully used LUT-FF pairs:     0  out of     34     0%  
+ Number of LUT Flip Flop pairs used:     37
+   Number with an unused Flip Flop:      37  out of     37   100%  
+   Number with an unused LUT:             0  out of     37     0%  
+   Number of fully used LUT-FF pairs:     0  out of     37     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                          12
- Number of bonded IOBs:                  12  out of    102    11%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    102     9%  
 
 Specific Feature Utilization:
 
@@ -379,7 +378,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 23.052ns
+   Maximum combinational path delay: 27.394ns
 
 Timing Details:
 ---------------
@@ -387,9 +386,9 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1430 / 9
+  Total number of paths / destination ports: 3365 / 7
 -------------------------------------------------------------------------
-Delay:               23.052ns (Levels of Logic = 17)
+Delay:               27.394ns (Levels of Logic = 21)
   Source:            SET (PAD)
   Destination:       ba (PAD)
 
@@ -397,26 +396,30 @@ Delay:               23.052ns (Levels of Logic = 17)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.616  SET_IBUF (SET_IBUF)
+     IBUF:I->O             3   1.222   0.650  SET_IBUF (SET_IBUF)
      INV:I->O              2   0.568   0.864  XLXI_1/XLXI_19 (XLXI_1/XLXN_45)
      NAND3:I2->O           2   0.320   0.864  XLXI_1/XLXI_14 (XLXI_1/XLXN_25)
      NAND3:I2->O           2   0.320   0.981  XLXI_1/XLXI_13 (XLXI_1/XLXN_5)
      NAND2:I0->O           1   0.203   0.924  XLXI_1/XLXI_4 (XLXI_1/XLXN_7)
-     NAND3:I1->O           2   0.223   0.981  XLXI_1/XLXI_17 (XLXI_1/bQ_DUMMY)
-     NAND3:I0->O          26   0.203   1.571  XLXI_1/XLXI_15 (Q0_OBUF)
+     NAND3:I1->O           5   0.223   1.079  XLXI_1/XLXI_17 (XLXN_21)
      NAND3:I0->O           1   0.203   0.924  XLXI_2/XLXI_10 (XLXI_2/XLXN_16)
      NAND3:I1->O           2   0.223   0.864  XLXI_2/XLXI_14 (XLXI_2/XLXN_25)
      NAND3:I2->O           2   0.320   0.981  XLXI_2/XLXI_13 (XLXI_2/XLXN_5)
      NAND2:I0->O           1   0.203   0.924  XLXI_2/XLXI_4 (XLXI_2/XLXN_7)
-     NAND3:I1->O           2   0.223   0.981  XLXI_2/XLXI_17 (XLXI_2/bQ_DUMMY)
-     NAND3:I0->O          20   0.203   1.092  XLXI_2/XLXI_15 (Q1_OBUF)
-     INV:I->O              2   0.568   0.961  XLXI_3/XLXI_1/XLXI_3 (XLXI_3/XLXI_1/XLXN_11)
-     AND4:I1->O            1   0.223   0.924  XLXI_3/XLXI_1/XLXI_6 (XLXI_3/XLXI_1/XLXN_39)
-     OR4:I1->O             1   0.223   0.579  XLXI_3/XLXI_1/XLXI_25 (ba_OBUF)
+     NAND3:I1->O           5   0.223   1.079  XLXI_2/XLXI_17 (XLXN_23)
+     NAND3:I0->O           1   0.203   0.924  XLXI_9/XLXI_10 (XLXI_9/XLXN_16)
+     NAND3:I1->O           2   0.223   0.864  XLXI_9/XLXI_14 (XLXI_9/XLXN_25)
+     NAND3:I2->O           2   0.320   0.981  XLXI_9/XLXI_13 (XLXI_9/XLXN_5)
+     NAND2:I0->O           1   0.203   0.924  XLXI_9/XLXI_4 (XLXI_9/XLXN_7)
+     NAND3:I1->O           2   0.223   0.981  XLXI_9/XLXI_17 (XLXI_9/bQ_DUMMY)
+     NAND3:I0->O          22   0.203   1.133  XLXI_9/XLXI_15 (XLXN_25)
+     INV:I->O              2   0.568   0.864  XLXI_3/XLXI_1/XLXI_2 (XLXI_3/XLXI_1/XLXN_10)
+     AND4:I2->O            1   0.320   0.944  XLXI_3/XLXI_1/XLXI_24 (XLXI_3/XLXI_1/XLXN_40)
+     OR4:I0->O             1   0.203   0.579  XLXI_3/XLXI_1/XLXI_25 (ba_OBUF)
      OBUF:I->O                 2.571          ba_OBUF (ba)
     ----------------------------------------
-    Total                     23.052ns (8.019ns logic, 15.033ns route)
-                                       (34.8% logic, 65.2% route)
+    Total                     27.394ns (9.065ns logic, 18.330ns route)
+                                       (33.1% logic, 66.9% route)
 
 =========================================================================
 
@@ -427,7 +430,7 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.74 secs
+Total CPU time to Xst completion: 6.20 secs
  
 --> 
 
@@ -435,5 +438,5 @@ Total memory usage is 4485808 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 
